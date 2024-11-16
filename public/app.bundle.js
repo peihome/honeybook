@@ -87,49 +87,296 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.mjs");
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+
+
 
 
 var Navbar = function Navbar() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState2 = _slicedToArray(_useState, 2),
+    featuresDropdown = _useState2[0],
+    setFeaturesDropdown = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState4 = _slicedToArray(_useState3, 2),
+    resourcesDropdown = _useState4[0],
+    setResourcesDropdown = _useState4[1];
+  var features = [{
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faClipboardCheck,
+    title: 'Features overview',
+    description: 'Powerful features built for small businesses.'
+  }, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faFileSignature,
+    title: 'Online contracts',
+    description: 'Customizable contracts that look professional.'
+  }, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faFileInvoice,
+    title: 'Online invoices',
+    description: 'Professional invoices that get you paid fast.'
+  }, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faCreditCard,
+    title: 'Online payments',
+    description: 'Make it easy for clients to pay you with online payments.'
+  }, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faFileInvoice,
+    title: 'Online proposals',
+    description: 'Easily book clients by combining an invoice, contract, and payment page.'
+  }, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faClock,
+    title: 'Online scheduling',
+    description: 'Skip the back-and-forth and book meetings 2x faster.'
+  }, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faCog,
+    title: 'Automations',
+    description: 'Put tasks, emails, files, and follow-up on autopilot.'
+  }, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faRobot,
+    title: 'HoneyBook AI',
+    description: 'Gain insight, boost productivity, and increase revenue.'
+  }, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faMoneyCheckAlt,
+    title: 'HoneyBook Finance',
+    description: 'Monitor cashflow, track spending, automate savings, and more.'
+  }];
+  var resources = [{
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faSearch,
+    title: 'Pros Marketplace',
+    description: 'Find experts to help grow your business.'
+  }, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faPodcast,
+    title: 'Independent Business podcast',
+    description: 'Join us as we break down the science of self-made success.'
+  }, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faQuestionCircle,
+    title: 'Help Center',
+    description: 'Answers and guidance on how to use HoneyBook.'
+  }, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faBlog,
+    title: 'HoneyBook blog',
+    description: 'Helpful articles and industry tips for independents.'
+  }, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faChalkboardTeacher,
+    title: 'Live virtual classes',
+    description: 'Live and on-demand trainings hosted by experts.'
+  }, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faFolderOpen,
+    title: 'Free file setup',
+    description: 'Let us turn your existing files into ready-to-use client-facing templates.'
+  }];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
     style: {
       background: '#333',
-      padding: '10px',
-      color: 'white'
+      padding: '10px 20px',
+      color: 'white',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: {
+      fontWeight: 'bold',
+      fontSize: '20px'
+    }
+  }, "HONEYBOOK"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: '20px'
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
     style: {
       listStyle: 'none',
-      display: 'flex'
+      display: 'flex',
+      margin: 0,
+      padding: 0,
+      gap: '20px',
+      position: 'relative'
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     style: {
-      margin: '0 10px'
+      position: 'relative'
+    },
+    onMouseEnter: function onMouseEnter() {
+      return setFeaturesDropdown(true);
+    },
+    onMouseLeave: function onMouseLeave() {
+      return setFeaturesDropdown(false);
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/",
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    to: "/features",
     style: {
-      color: 'white'
+      color: 'white',
+      textDecoration: 'none'
     }
-  }, "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, "Features", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
+    class: "pl-2 fa fa-caret-down",
+    "aria-hidden": "true"
+  })), featuresDropdown && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     style: {
-      margin: '0 10px'
+      position: 'absolute',
+      top: '100%',
+      left: '50%',
+      transform: 'translateX(-50%)',
+      background: '#444',
+      padding: '20px',
+      borderRadius: '5px',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+      width: '600px',
+      display: 'grid',
+      gridTemplateColumns: 'repeat(3, 1fr)',
+      gap: '20px',
+      zIndex: 1000
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/about",
+  }, features.map(function (item, index) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      key: index,
+      style: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        textAlign: 'center',
+        color: 'white',
+        padding: '10px',
+        borderRadius: '5px',
+        transition: 'background 0.3s, transform 0.2s',
+        cursor: 'pointer'
+      },
+      onMouseEnter: function onMouseEnter(e) {
+        e.currentTarget.style.background = '#555';
+        e.currentTarget.style.transform = 'scale(1.05)';
+      },
+      onMouseLeave: function onMouseLeave(e) {
+        e.currentTarget.style.background = 'transparent';
+        e.currentTarget.style.transform = 'scale(1)';
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+      icon: item.icon,
+      size: "2x",
+      style: {
+        marginBottom: '10px',
+        color: '#ff9800'
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", {
+      style: {
+        marginBottom: '5px'
+      }
+    }, item.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+      style: {
+        fontSize: '14px',
+        color: '#ddd'
+      }
+    }, item.description));
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     style: {
-      color: 'white'
+      position: 'relative'
+    },
+    onMouseEnter: function onMouseEnter() {
+      return setResourcesDropdown(true);
+    },
+    onMouseLeave: function onMouseLeave() {
+      return setResourcesDropdown(false);
     }
-  }, "About")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    to: "/resources",
     style: {
-      margin: '0 10px'
+      color: 'white',
+      textDecoration: 'none'
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/contact",
+  }, "Resources", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
+    class: "pl-2 fa fa-caret-down",
+    "aria-hidden": "true"
+  })), resourcesDropdown && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     style: {
-      color: 'white'
+      position: 'absolute',
+      top: '100%',
+      left: '50%',
+      transform: 'translateX(-50%)',
+      background: '#444',
+      padding: '20px',
+      borderRadius: '5px',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+      width: '500px',
+      display: 'grid',
+      gridTemplateColumns: 'repeat(3, 1fr)',
+      gap: '20px',
+      zIndex: 1000
     }
-  }, "Contact"))));
+  }, resources.map(function (item, index) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      key: index,
+      style: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        textAlign: 'center',
+        color: 'white',
+        padding: '10px',
+        borderRadius: '5px',
+        transition: 'background 0.3s, transform 0.2s',
+        cursor: 'pointer'
+      },
+      onMouseEnter: function onMouseEnter(e) {
+        e.currentTarget.style.background = '#555';
+        e.currentTarget.style.transform = 'scale(1.05)';
+      },
+      onMouseLeave: function onMouseLeave(e) {
+        e.currentTarget.style.background = 'transparent';
+        e.currentTarget.style.transform = 'scale(1)';
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+      icon: item.icon,
+      size: "2x",
+      style: {
+        marginBottom: '10px',
+        color: '#ff9800'
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", {
+      style: {
+        marginBottom: '5px'
+      }
+    }, item.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+      style: {
+        fontSize: '14px',
+        color: '#ddd'
+      }
+    }, item.description));
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    to: "/templates",
+    style: {
+      color: 'white',
+      textDecoration: 'none'
+    }
+  }, "Templates")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    to: "/pricing",
+    style: {
+      color: 'white',
+      textDecoration: 'none'
+    }
+  }, "Pricing")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    to: "/login",
+    style: {
+      color: 'white',
+      textDecoration: 'none'
+    }
+  }, "Log In"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    style: {
+      background: '#ff9800',
+      color: 'white',
+      border: 'none',
+      borderRadius: '5px',
+      padding: '10px 15px',
+      cursor: 'pointer'
+    }
+  }, "Start Free Trial")));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);
 
