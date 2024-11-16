@@ -1,0 +1,34 @@
+{
+  "name": "suryaprakashnagarajan_assignment1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/main.js",
+  "scripts": {
+    "start#": "npm install && babel jsx --presets @babel/react --out-dir public && node server/main.js",
+    "watch#": "babel jsx --presets @babel/react --out-dir public --watch --verbose",
+    "start": "npm install && nodemon --watch server",
+    "watch": "npm install && webpack -w --config webpack.config.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "lint:report": "eslint src/* --format node_modules/eslint-html-reporter/reporter.js --output-file eslint-report.html",
+    "format:check": "prettier --check src/*",
+    "format:fix": "prettier --write src/*",
+    "build": "docker rmi -f frontend_test || true && docker build -t frontend_test ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "babel-loader": "^9.2.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.1"
+  },
+  "devDependencies": {
+    "dotenv-webpack": "^8.1.0",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

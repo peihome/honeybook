@@ -1,0 +1,77 @@
+/* youtube-skin.css */
+.video-js {
+    width: 640px;
+    height: 360px;
+    font-family: Arial, sans-serif;
+    position: relative; /* Enable absolute positioning of the play button */
+  }
+  
+  .video-js .vjs-control-bar {
+    background: rgba(0, 0, 0, 0.7); /* Dark background for controls */
+  }
+  
+  .video-js .vjs-play-control,
+  .video-js .vjs-mute-control,
+  .video-js .vjs-volume-control {
+    color: #fff; /* White icons */
+  }
+  
+  .video-js .vjs-progress-holder {
+    background: rgba(0, 0, 0, 0.5); /* Dark progress bar background */
+  }
+  
+  .video-js .vjs-seek-handle {
+    background: #ff0000; /* Red seek handle */
+  }
+  
+  .video-js .vjs-play-progress {
+    background: #ff0000; /* Red progress bar */
+  }
+  
+  .video-js .vjs-current-time,
+  .video-js .vjs-duration {
+    color: #fff; /* White time text */
+  }
+  
+  .video-js .vjs-big-play-button {
+    background: rgba(0, 0, 0, 0.5); /* Dark background for play button */
+    border: 2px solid #fff; /* White border for play button */
+    border-radius: 50%;
+    color: #fff; /* White play icon */
+    font-size: 3rem; /* Adjust size as needed */
+    width: 60px; /* Size of the play button */
+    height: 60px; /* Size of the play button */
+    line-height: 60px; /* Centering play icon vertically */
+    text-align: center; /* Centering play icon horizontally */
+    position: absolute; /* Absolute positioning for centering */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact center */
+  }
+  
+  .video-js .vjs-big-play-button .vjs-icon-play {
+    font-size: 2rem; /* Size of the play icon */
+  }  
+
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .video-form {
+    margin-bottom: 20px;
+  }
+  
+  .video-player-container {
+    width: 50%; /* Half of the page */
+    height: auto;
+  }
+  
+  .video-js {
+    width: 100%;
+    height: auto;
+  }
+  
