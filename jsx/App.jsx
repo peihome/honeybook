@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
 import HomePage from './pages/HomePage.jsx';
+import Help from './pages/Help.jsx';
+
 
 const App = () => {
   return (
@@ -13,10 +15,11 @@ const App = () => {
           <Navbar />
         </div>
 
-        {/* Center section with body (replaces content based on route) */}
-        <div style={{ flex: 1, padding: '20px' }}>
+     {/* Center section with body (replaces content based on route) */}
+     <div style={{ flex: 1, padding: '20px' }}>
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/help" element={<Help />} /> {/* Add route for Help */}
           </Routes>
         </div>
 
