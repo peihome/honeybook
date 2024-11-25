@@ -15,27 +15,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-<<<<<<< HEAD
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../index.css */ "./index.css");
-/* harmony import */ var _components_Navbar_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Navbar.jsx */ "./jsx/components/Navbar.jsx");
-/* harmony import */ var _components_Footer_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Footer.jsx */ "./jsx/components/Footer.jsx");
-/* harmony import */ var _pages_HomePage_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/HomePage.jsx */ "./jsx/pages/HomePage.jsx");
-/* harmony import */ var _pages_Help_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/Help.jsx */ "./jsx/pages/Help.jsx");
-/* harmony import */ var _pages_Feature_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/Feature.jsx */ "./jsx/pages/Feature.jsx");
-/* harmony import */ var _pages_Templates_jsx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/Templates.jsx */ "./jsx/pages/Templates.jsx");
-
-
-=======
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var _components_Navbar_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Navbar.jsx */ "./jsx/components/Navbar.jsx");
 /* harmony import */ var _components_Footer_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Footer.jsx */ "./jsx/components/Footer.jsx");
 /* harmony import */ var _pages_HomePage_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/HomePage.jsx */ "./jsx/pages/HomePage.jsx");
 /* harmony import */ var _pages_Help_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/Help.jsx */ "./jsx/pages/Help.jsx");
 /* harmony import */ var _pages_Features_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/Features.jsx */ "./jsx/pages/Features.jsx");
->>>>>>> 8bb0b60 (Navbar responsive and few changes on HomePage)
+/* harmony import */ var _pages_Templates_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/Templates.jsx */ "./jsx/pages/Templates.jsx");
+
 
 
 
@@ -45,11 +33,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var App = function App() {
-<<<<<<< HEAD
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-=======
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
->>>>>>> 8bb0b60 (Navbar responsive and few changes on HomePage)
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     style: {
       display: "flex",
       flexDirection: "column",
@@ -60,32 +44,19 @@ var App = function App() {
       flex: 1,
       padding: "20px"
     }
-<<<<<<< HEAD
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
-    path: "/",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_HomePage_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
-    path: "/features",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Feature_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
-    path: "/help",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Help_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], null)
-  }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
-    path: "/templates",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Templates_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], null)
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null))));
-=======
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
     path: "/",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_HomePage_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
     path: "/features",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Features_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
     path: "/help",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Help_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
+    path: "/templates",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Templates_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], null)
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null))));
->>>>>>> 8bb0b60 (Navbar responsive and few changes on HomePage)
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
 react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.getElementById("contents")).render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(App, null));
@@ -118,11 +89,11 @@ var Footer = function Footer() {
     className: "footer-column"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Product"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Features overview"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Online contracts"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Online signature generator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Online document signing"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Online invoices"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Online payments"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Payment reminders"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Online proposals"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Online scheduling"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Automations"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "HoneyBook Finance"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "footer-column"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Resources"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Live chat"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Help Center"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "HoneyBook Blog"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Live virtual classes"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "HoneyBook business academy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Independent Business podcast"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Pros Marketplace"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Free file setup"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Sitemap"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "HoneyBook"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Pricing"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Reviews"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Careers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Press"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Company news"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Educator program"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Referral program"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Terms & privacy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Subpoena policy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Contact us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Your privacy choices"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "footer-column"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Free tools"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Contract templates"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Invoice templates"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Invoice generator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Self-employment tax calculator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Email signature generator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Mission statement generator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Business personality test"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "footer-column"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "HoneyBook"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Pricing"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Reviews"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Careers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Press"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Company news"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Educator program"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Referral program"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Terms & privacy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Subpoena policy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Contact us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Your privacy choices"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Resources"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Live chat"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Help Center"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "HoneyBook Blog"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Live virtual classes"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "HoneyBook business academy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Independent Business podcast"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Pros Marketplace"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Free file setup"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Sitemap"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "footer-bottom"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "\xA9 2024 HoneyBook Inc."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "footer-socials"
@@ -481,10 +452,6 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 // Created by: Varshil Patel - 8938884
-<<<<<<< HEAD
-
-=======
->>>>>>> 8bb0b60 (Navbar responsive and few changes on HomePage)
 
 
 
@@ -1513,6 +1480,23 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 ___CSS_LOADER_EXPORT___.push([module.id, `/* General mobile styles for the Navbar */
 @media screen and (max-width: 768px) {
 
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column-right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        justify-items: center;
+        padding-top: 1em;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
     .dropitem {
         transform: translateX(-30%) !important;
         grid-template-columns: 1fr 1fr 1fr !important;
@@ -1619,7 +1603,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* General mobile styles for the Navba
       padding: 10px 20px;
     }
   }
-  `, "",{"version":3,"sources":["webpack://./public/css/navbar.css"],"names":[],"mappings":"AAAA,yCAAyC;AACzC;;IAEI;QACI,sCAAsC;QACtC,6CAA6C;QAC7C,uBAAuB;IAC3B;;IAEA;QACI,sCAAsC;QACtC,uBAAuB;IAC3B;;IAEA;QACI,iBAAiB;IACrB;;IAEA;QACI,iBAAiB;IACrB;;IAEA;QACI,aAAa;QACb,8BAA8B;QAC9B,oBAAoB;IACxB;;IAEA;QACI,aAAa;IACjB;;IAEA;QACI,eAAe;IACnB;;IAEA;MACE,sBAAsB;MACtB,uBAAuB;MACvB,aAAa;IACf;;IAEA,uBAAuB;IACvB;MACE,eAAe;MACf,mBAAmB;IACrB;;IAEA,oCAAoC;IACpC;MACE,aAAa;MACb,sBAAsB;MACtB,WAAW;MACX,gBAAgB;IAClB;;IAEA,oCAAoC;IACpC;MACE,aAAa;MACb,sBAAsB;MACtB,WAAW;MACX,SAAS;MACT,SAAS;MACT,UAAU;IACZ;;IAEA,yBAAyB;IACzB;MACE,WAAW;MACX,gBAAgB;MAChB,iBAAiB;IACnB;;IAEA,oEAAoE;IACpE;MACE,aAAa;MACb,8BAA8B;MAC9B,mBAAmB;MACnB,YAAY;MACZ,qBAAqB;MACrB,eAAe;MACf,WAAW;IACb;;IAEA;MACE,iBAAiB;IACnB;;IAEA,8CAA8C;IAC9C;MACE,aAAa;IACf;;IAEA,+CAA+C;IAC/C;MACE,mBAAmB;MACnB,YAAY;MACZ,YAAY;MACZ,kBAAkB;MAClB,kBAAkB;MAClB,gBAAgB;MAChB,WAAW;IACb;;IAEA,kDAAkD;IAClD;MACE,kBAAkB;IACpB;EACF","sourcesContent":["/* General mobile styles for the Navbar */\n@media screen and (max-width: 768px) {\n\n    .dropitem {\n        transform: translateX(-30%) !important;\n        grid-template-columns: 1fr 1fr 1fr !important;\n        width: 510px !important;\n    }\n\n    .dropitemResources {\n        transform: translateX(-50%) !important;\n        width: 510px !important;\n    }\n\n    h1{\n        font-size: 1.5rem;\n    }\n\n    h2 {\n        font-size: 1.5rem;\n    }\n\n    .homeAndTrial {\n        display: flex;\n        justify-content: space-between;\n        padding-bottom: 15px;\n    }\n\n    #trialButtonDesktop {\n        display: none;\n    }\n\n    #trialButtonMobile {\n        display: inline;\n    }\n\n    nav {\n      flex-direction: column;\n      align-items: flex-start;\n      padding: 10px;\n    }\n  \n    /* Left section: Logo */\n    .navbar-logo {\n      font-size: 18px;\n      margin-bottom: 10px;\n    }\n  \n    /* Right section: Links and Button */\n    .navbar-links {\n      display: flex;\n      flex-direction: column;\n      width: 100%;\n      margin-top: 10px;\n    }\n  \n    /* Make the links stack vertically */\n    .navbar-links ul {\n      display: flex;\n      flex-direction: column;\n      width: 100%;\n      gap: 10px;\n      margin: 0;\n      padding: 0;\n    }\n  \n    /* Navbar links styling */\n    .navbar-links li {\n      width: 100%;\n      text-align: left;\n      padding: 5px 15px;\n    }\n  \n    /* Remove dropdown display styles and make them a button on mobile */\n    .navbar-links li > a {\n      display: flex;\n      justify-content: space-between;\n      align-items: center;\n      color: white;\n      text-decoration: none;\n      padding: 10px 0;\n      width: 100%;\n    }\n  \n    .navbar-links li > a i {\n      margin-left: 10px;\n    }\n  \n    /* Dropdown menus should be hidden on mobile */\n    .dropdown-menu {\n      display: none;\n    }\n  \n    /* Mobile button styling for Start Free Trial */\n    .navbar-button {\n      background: #ff9800;\n      color: white;\n      border: none;\n      border-radius: 5px;\n      padding: 10px 15px;\n      margin-top: 10px;\n      width: 100%;\n    }\n  \n    /* Add some padding to mobile navbar for spacing */\n    .navbar-container {\n      padding: 10px 20px;\n    }\n  }\n  "],"sourceRoot":""}]);
+  `, "",{"version":3,"sources":["webpack://./public/css/navbar.css"],"names":[],"mappings":"AAAA,yCAAyC;AACzC;;IAEI;QACI,sBAAsB;QACtB,mBAAmB;IACvB;;IAEA;QACI,aAAa;QACb,8BAA8B;QAC9B,gBAAgB;QAChB,qBAAqB;QACrB,gBAAgB;IACpB;;IAEA;QACI,WAAW;IACf;;IAEA;QACI,sCAAsC;QACtC,6CAA6C;QAC7C,uBAAuB;IAC3B;;IAEA;QACI,sCAAsC;QACtC,uBAAuB;IAC3B;;IAEA;QACI,iBAAiB;IACrB;;IAEA;QACI,iBAAiB;IACrB;;IAEA;QACI,aAAa;QACb,8BAA8B;QAC9B,oBAAoB;IACxB;;IAEA;QACI,aAAa;IACjB;;IAEA;QACI,eAAe;IACnB;;IAEA;MACE,sBAAsB;MACtB,uBAAuB;MACvB,aAAa;IACf;;IAEA,uBAAuB;IACvB;MACE,eAAe;MACf,mBAAmB;IACrB;;IAEA,oCAAoC;IACpC;MACE,aAAa;MACb,sBAAsB;MACtB,WAAW;MACX,gBAAgB;IAClB;;IAEA,oCAAoC;IACpC;MACE,aAAa;MACb,sBAAsB;MACtB,WAAW;MACX,SAAS;MACT,SAAS;MACT,UAAU;IACZ;;IAEA,yBAAyB;IACzB;MACE,WAAW;MACX,gBAAgB;MAChB,iBAAiB;IACnB;;IAEA,oEAAoE;IACpE;MACE,aAAa;MACb,8BAA8B;MAC9B,mBAAmB;MACnB,YAAY;MACZ,qBAAqB;MACrB,eAAe;MACf,WAAW;IACb;;IAEA;MACE,iBAAiB;IACnB;;IAEA,8CAA8C;IAC9C;MACE,aAAa;IACf;;IAEA,+CAA+C;IAC/C;MACE,mBAAmB;MACnB,YAAY;MACZ,YAAY;MACZ,kBAAkB;MAClB,kBAAkB;MAClB,gBAAgB;MAChB,WAAW;IACb;;IAEA,kDAAkD;IAClD;MACE,kBAAkB;IACpB;EACF","sourcesContent":["/* General mobile styles for the Navbar */\n@media screen and (max-width: 768px) {\n\n    .footer-content {\n        flex-direction: column;\n        align-items: center;\n    }\n\n    .footer-column-right {\n        display: grid;\n        grid-template-columns: 1fr 1fr;\n        text-align: left;\n        justify-items: center;\n        padding-top: 1em;\n    }\n\n    .footer-column {\n        width: 100%;\n    }\n\n    .dropitem {\n        transform: translateX(-30%) !important;\n        grid-template-columns: 1fr 1fr 1fr !important;\n        width: 510px !important;\n    }\n\n    .dropitemResources {\n        transform: translateX(-50%) !important;\n        width: 510px !important;\n    }\n\n    h1{\n        font-size: 1.5rem;\n    }\n\n    h2 {\n        font-size: 1.5rem;\n    }\n\n    .homeAndTrial {\n        display: flex;\n        justify-content: space-between;\n        padding-bottom: 15px;\n    }\n\n    #trialButtonDesktop {\n        display: none;\n    }\n\n    #trialButtonMobile {\n        display: inline;\n    }\n\n    nav {\n      flex-direction: column;\n      align-items: flex-start;\n      padding: 10px;\n    }\n  \n    /* Left section: Logo */\n    .navbar-logo {\n      font-size: 18px;\n      margin-bottom: 10px;\n    }\n  \n    /* Right section: Links and Button */\n    .navbar-links {\n      display: flex;\n      flex-direction: column;\n      width: 100%;\n      margin-top: 10px;\n    }\n  \n    /* Make the links stack vertically */\n    .navbar-links ul {\n      display: flex;\n      flex-direction: column;\n      width: 100%;\n      gap: 10px;\n      margin: 0;\n      padding: 0;\n    }\n  \n    /* Navbar links styling */\n    .navbar-links li {\n      width: 100%;\n      text-align: left;\n      padding: 5px 15px;\n    }\n  \n    /* Remove dropdown display styles and make them a button on mobile */\n    .navbar-links li > a {\n      display: flex;\n      justify-content: space-between;\n      align-items: center;\n      color: white;\n      text-decoration: none;\n      padding: 10px 0;\n      width: 100%;\n    }\n  \n    .navbar-links li > a i {\n      margin-left: 10px;\n    }\n  \n    /* Dropdown menus should be hidden on mobile */\n    .dropdown-menu {\n      display: none;\n    }\n  \n    /* Mobile button styling for Start Free Trial */\n    .navbar-button {\n      background: #ff9800;\n      color: white;\n      border: none;\n      border-radius: 5px;\n      padding: 10px 15px;\n      margin-top: 10px;\n      width: 100%;\n    }\n  \n    /* Add some padding to mobile navbar for spacing */\n    .navbar-container {\n      padding: 10px 20px;\n    }\n  }\n  "],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

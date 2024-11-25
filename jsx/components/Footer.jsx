@@ -25,17 +25,20 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer-column">
-            <h4>Resources</h4>
+            <h4>HoneyBook</h4>
             <ul>
-              <li>Live chat</li>
-              <li>Help Center</li>
-              <li>HoneyBook Blog</li>
-              <li>Live virtual classes</li>
-              <li>HoneyBook business academy</li>
-              <li>Independent Business podcast</li>
-              <li>Pros Marketplace</li>
-              <li>Free file setup</li>
-              <li>Sitemap</li>
+              <li>Pricing</li>
+              <li>Reviews</li>
+              <li>About</li>
+              <li>Careers</li>
+              <li>Press</li>
+              <li>Company news</li>
+              <li>Educator program</li>
+              <li>Referral program</li>
+              <li>Terms & privacy</li>
+              <li>Subpoena policy</li>
+              <li>Contact us</li>
+              <li>Your privacy choices</li>
             </ul>
           </div>
           <div className="footer-column">
@@ -51,20 +54,17 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer-column">
-            <h4>HoneyBook</h4>
+            <h4>Resources</h4>
             <ul>
-              <li>Pricing</li>
-              <li>Reviews</li>
-              <li>About</li>
-              <li>Careers</li>
-              <li>Press</li>
-              <li>Company news</li>
-              <li>Educator program</li>
-              <li>Referral program</li>
-              <li>Terms & privacy</li>
-              <li>Subpoena policy</li>
-              <li>Contact us</li>
-              <li>Your privacy choices</li>
+              <li>Live chat</li>
+              <li>Help Center</li>
+              <li>HoneyBook Blog</li>
+              <li>Live virtual classes</li>
+              <li>HoneyBook business academy</li>
+              <li>Independent Business podcast</li>
+              <li>Pros Marketplace</li>
+              <li>Free file setup</li>
+              <li>Sitemap</li>
             </ul>
           </div>
         </div>

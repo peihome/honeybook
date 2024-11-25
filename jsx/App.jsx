@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import Help from "./pages/Help.jsx";
-import Features from "./pages/Feature.jsx";
+import Features from "./pages/Features.jsx";
 import Templates from "./pages/Templates.jsx";
 
 const App = () => {

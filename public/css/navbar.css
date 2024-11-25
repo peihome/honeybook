@@ -1,6 +1,23 @@
 /* General mobile styles for the Navbar */
 @media screen and (max-width: 768px) {
 
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column-right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        justify-items: center;
+        padding-top: 1em;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
     .dropitem {
         transform: translateX(-30%) !important;
         grid-template-columns: 1fr 1fr 1fr !important;
