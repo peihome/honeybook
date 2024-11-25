@@ -291,6 +291,14 @@ const Navbar = () => {
               Templates
             </Link>
           </li>
+          <li>
+            <Link
+              to="/help"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              Help
+            </Link>
+          </li>
         </ul>
 
         {/* Start Free Trial Button */}
