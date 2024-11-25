@@ -15,14 +15,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var _components_Navbar_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Navbar.jsx */ "./jsx/components/Navbar.jsx");
 /* harmony import */ var _components_Footer_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Footer.jsx */ "./jsx/components/Footer.jsx");
 /* harmony import */ var _pages_HomePage_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/HomePage.jsx */ "./jsx/pages/HomePage.jsx");
 /* harmony import */ var _pages_Help_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/Help.jsx */ "./jsx/pages/Help.jsx");
 /* harmony import */ var _pages_Features_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/Features.jsx */ "./jsx/pages/Features.jsx");
 /* harmony import */ var _pages_Templates_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/Templates.jsx */ "./jsx/pages/Templates.jsx");
+/* harmony import */ var _pages_Pricing_jsx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/Pricing.jsx */ "./jsx/pages/Pricing.jsx");
+// Created by: Surya Prakash N - 8924019
+
+
 
 
 
@@ -33,7 +37,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var App = function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     style: {
       display: "flex",
       flexDirection: "column",
@@ -44,18 +48,21 @@ var App = function App() {
       flex: 1,
       padding: "20px"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
     path: "/",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_HomePage_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
     path: "/features",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Features_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
     path: "/help",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Help_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
     path: "/templates",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Templates_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
+    path: "/pricing",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Pricing_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], null)
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
@@ -75,46 +82,284 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+// Created by: Surya Prakash N - 8924019
 
+
+
+// Inline CSS styles
+var styles = {
+  footer: {
+    backgroundColor: '#2c3e50',
+    color: 'white',
+    padding: '40px 20px',
+    fontFamily: 'Arial, sans-serif'
+  },
+  footerContent: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    flexWrap: 'wrap',
+    gap: '30px'
+  },
+  footerColumnLeft: {
+    flex: 1
+  },
+  footerColumnLeftH1: {
+    fontSize: '28px',
+    fontWeight: 'bold',
+    color: '#ff9800',
+    marginBottom: '20px'
+  },
+  footerColumnRight: {
+    display: 'flex',
+    gap: '30px',
+    flex: 3,
+    flexWrap: 'wrap'
+  },
+  footerColumn: {
+    flex: 1,
+    minWidth: '200px'
+  },
+  footerColumnH4: {
+    fontSize: '18px',
+    fontWeight: 'bold',
+    marginBottom: '15px',
+    color: '#ff9800'
+  },
+  footerColumnUl: {
+    listStyleType: 'none',
+    padding: 0
+  },
+  footerColumnLi: {
+    margin: '10px 0',
+    fontSize: '14px',
+    transition: 'color 0.3s'
+  },
+  footerColumnLiHover: {
+    color: '#ff9800',
+    cursor: 'pointer'
+  },
+  footerBottom: {
+    marginTop: '40px',
+    textAlign: 'center'
+  },
+  footerBottomP: {
+    margin: 0,
+    fontSize: '14px',
+    color: '#bdc3c7'
+  },
+  footerSocials: {
+    margin: '10px 0'
+  },
+  footerSocialsIcon: {
+    fontSize: '20px',
+    color: '#fff',
+    margin: '0 10px',
+    transition: 'color 0.3s'
+  },
+  footerSocialsIconHover: {
+    color: '#ff9800'
+  },
+  footerApps: {
+    marginTop: '15px'
+  },
+  footerAppsImg: {
+    width: '120px',
+    margin: '0 10px',
+    transition: 'transform 0.3s'
+  },
+  footerAppsImgHover: {
+    transform: 'scale(1.1)'
+  }
+};
+
+// React Footer Component
 var Footer = function Footer() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
-    className: "footer"
+    style: styles.footer
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer-content"
+    style: styles.footerContent,
+    class: "footerContent"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer-column-left"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "HONEYBOOK")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer-column-right"
+    style: styles.footerColumnLeft
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    style: styles.footerColumnLeftH1
+  }, "HONEYBOOK")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: styles.footerColumnRight
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer-column"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Product"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Features overview"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Online contracts"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Online signature generator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Online document signing"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Online invoices"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Online payments"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Payment reminders"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Online proposals"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Online scheduling"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Automations"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "HoneyBook Finance"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer-column"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "HoneyBook"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Pricing"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Reviews"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Careers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Press"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Company news"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Educator program"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Referral program"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Terms & privacy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Subpoena policy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Contact us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Your privacy choices"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer-column"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Free tools"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Contract templates"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Invoice templates"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Invoice generator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Self-employment tax calculator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Email signature generator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Mission statement generator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Business personality test"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer-column"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Resources"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Live chat"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Help Center"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "HoneyBook Blog"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Live virtual classes"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "HoneyBook business academy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Independent Business podcast"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Pros Marketplace"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Free file setup"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Sitemap"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer-bottom"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "\xA9 2024 HoneyBook Inc."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "footer-socials"
+    style: styles.footerColumn
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", {
+    style: styles.footerColumnH4
+  }, "Product"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    style: styles.footerColumnUl
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Features overview"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Online contracts"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Online signature generator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Online document signing"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Online invoices"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Online payments"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Payment reminders"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Online proposals"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Online scheduling"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Automations"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "HoneyBook Finance"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: styles.footerColumn
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", {
+    style: styles.footerColumnH4
+  }, "HoneyBook"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    style: styles.footerColumnUl
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Pricing"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Reviews"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Careers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Press"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Company news"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Educator program"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Referral program"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Terms & privacy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Subpoena policy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Contact us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Your privacy choices"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: styles.footerColumn
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", {
+    style: styles.footerColumnH4
+  }, "Free tools"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    style: styles.footerColumnUl
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Contract templates"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Invoice templates"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Invoice generator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Self-employment tax calculator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Email signature generator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Mission statement generator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Business personality test"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: styles.footerColumn
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", {
+    style: styles.footerColumnH4
+  }, "Resources"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    style: styles.footerColumnUl
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Live chat"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Help Center"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "HoneyBook Blog"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Live virtual classes"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "HoneyBook business academy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Independent Business podcast"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Pros Marketplace"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Free file setup"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    style: styles.footerColumnLi
+  }, "Sitemap"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: styles.footerBottom
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    style: styles.footerBottomP
+  }, "\xA9 2024 HoneyBook Inc."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: styles.footerSocials
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fab fa-facebook"
+    className: "fab fa-facebook",
+    style: styles.footerSocialsIcon,
+    onMouseEnter: function onMouseEnter(e) {
+      return e.currentTarget.style.color = '#ff9800';
+    },
+    onMouseLeave: function onMouseLeave(e) {
+      return e.currentTarget.style.color = 'white';
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fab fa-instagram"
+    className: "fab fa-instagram",
+    style: styles.footerSocialsIcon,
+    onMouseEnter: function onMouseEnter(e) {
+      return e.currentTarget.style.color = '#ff9800';
+    },
+    onMouseLeave: function onMouseLeave(e) {
+      return e.currentTarget.style.color = 'white';
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fab fa-x-twitter"
+    className: "fab fa-x-twitter",
+    style: styles.footerSocialsIcon,
+    onMouseEnter: function onMouseEnter(e) {
+      return e.currentTarget.style.color = '#ff9800';
+    },
+    onMouseLeave: function onMouseLeave(e) {
+      return e.currentTarget.style.color = 'white';
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fab fa-pinterest"
+    className: "fab fa-pinterest",
+    style: styles.footerSocialsIcon,
+    onMouseEnter: function onMouseEnter(e) {
+      return e.currentTarget.style.color = '#ff9800';
+    },
+    onMouseLeave: function onMouseLeave(e) {
+      return e.currentTarget.style.color = 'white';
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    className: "fab fa-linkedin"
+    className: "fab fa-linkedin",
+    style: styles.footerSocialsIcon,
+    onMouseEnter: function onMouseEnter(e) {
+      return e.currentTarget.style.color = '#ff9800';
+    },
+    onMouseLeave: function onMouseLeave(e) {
+      return e.currentTarget.style.color = 'white';
+    }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "mt-2 footer-apps"
+    style: styles.footerApps
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     src: "/img/apple.svg",
-    alt: "App Store"
+    alt: "App Store",
+    style: styles.footerAppsImg,
+    onMouseEnter: function onMouseEnter(e) {
+      return e.currentTarget.style.transform = 'scale(1.1)';
+    },
+    onMouseLeave: function onMouseLeave(e) {
+      return e.currentTarget.style.transform = 'scale(1)';
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     src: "/img/gplay.svg",
-    alt: "Google Play"
+    alt: "Google Play",
+    style: styles.footerAppsImg,
+    onMouseEnter: function onMouseEnter(e) {
+      return e.currentTarget.style.transform = 'scale(1.1)';
+    },
+    onMouseLeave: function onMouseLeave(e) {
+      return e.currentTarget.style.transform = 'scale(1)';
+    }
   }))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
@@ -143,6 +388,8 @@ function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) 
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+// Created by: Surya Prakash N - 8924019
+
 
 
 
@@ -221,7 +468,8 @@ var Navbar = function Navbar() {
   }];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
     style: {
-      background: "#333",
+      background: "#2c3e50",
+      // Matching footer color
       padding: "10px 20px",
       color: "white",
       display: "flex",
@@ -229,7 +477,7 @@ var Navbar = function Navbar() {
       justifyContent: "space-between"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    class: "homeAndTrial",
+    className: "homeAndTrial",
     style: {
       fontWeight: "bold",
       fontSize: "20px"
@@ -240,13 +488,17 @@ var Navbar = function Navbar() {
       color: "white",
       textDecoration: "none"
     }
-  }, "HONEYBOOK")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: "/favicon.png",
+    class: "pr-2"
+  }), "HONEYBOOK")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     style: {
       display: "flex",
       alignItems: "center",
       gap: "20px"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    class: "ulClass",
     style: {
       listStyle: "none",
       display: "flex",
@@ -269,19 +521,25 @@ var Navbar = function Navbar() {
     to: "/features",
     style: {
       color: "white",
-      textDecoration: "none"
+      textDecoration: "none",
+      position: "relative",
+      fontWeight: "bold"
     }
   }, "Features", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    class: "pl-2 fa fa-caret-down",
-    "aria-hidden": "true"
+    className: "pl-2 fa fa-caret-down",
+    "aria-hidden": "true",
+    style: {
+      marginLeft: "5px"
+    }
   })), featuresDropdown && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    class: "dropitem",
+    className: "dropitem",
     style: {
       position: "absolute",
       top: "100%",
       left: "50%",
       transform: "translateX(-50%)",
-      background: "#444",
+      background: "#34495e",
+      // Slightly lighter than the navbar background
       padding: "20px",
       borderRadius: "5px",
       boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
@@ -307,7 +565,7 @@ var Navbar = function Navbar() {
         cursor: "pointer"
       },
       onMouseEnter: function onMouseEnter(e) {
-        e.currentTarget.style.background = "#555";
+        e.currentTarget.style.background = "#2c3e50"; // Darker on hover
         e.currentTarget.style.transform = "scale(1.05)";
       },
       onMouseLeave: function onMouseLeave(e) {
@@ -341,23 +599,27 @@ var Navbar = function Navbar() {
     onMouseLeave: function onMouseLeave() {
       return setResourcesDropdown(false);
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
-    to: "/resources",
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     style: {
       color: "white",
-      textDecoration: "none"
+      textDecoration: "none",
+      fontWeight: "bold"
     }
   }, "Resources", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
-    class: "pl-2 fa fa-caret-down",
-    "aria-hidden": "true"
+    className: "pl-2 fa fa-caret-down",
+    "aria-hidden": "true",
+    style: {
+      marginLeft: "5px"
+    }
   })), resourcesDropdown && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    class: "dropitemResources",
+    className: "dropitemResources",
     style: {
       position: "absolute",
       top: "100%",
       left: "50%",
       transform: "translateX(-50%)",
-      background: "#444",
+      background: "#34495e",
+      // Slightly lighter than the navbar background
       padding: "20px",
       borderRadius: "5px",
       boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
@@ -382,7 +644,7 @@ var Navbar = function Navbar() {
         cursor: "pointer"
       },
       onMouseEnter: function onMouseEnter(e) {
-        e.currentTarget.style.background = "#555";
+        e.currentTarget.style.background = "#2c3e50"; // Darker on hover
         e.currentTarget.style.transform = "scale(1.05)";
       },
       onMouseLeave: function onMouseLeave(e) {
@@ -410,27 +672,241 @@ var Navbar = function Navbar() {
     to: "/templates",
     style: {
       color: "white",
-      textDecoration: "none"
+      textDecoration: "none",
+      fontWeight: "bold"
     }
   }, "Templates")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
+    to: "/pricing",
+    style: {
+      color: "white",
+      textDecoration: "none",
+      fontWeight: "bold"
+    }
+  }, "Pricing")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
     to: "/help",
     style: {
       color: "white",
-      textDecoration: "none"
+      textDecoration: "none",
+      fontWeight: "bold"
     }
-  }, "Help"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+  }, "Help"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
     id: "trialButtonDesktop",
+    to: "/signup",
     style: {
-      background: "#ff9800",
+      backgroundColor: "#ff9800",
       color: "white",
-      border: "none",
+      padding: "10px 20px",
       borderRadius: "5px",
-      padding: "10px 15px",
-      cursor: "pointer"
+      textDecoration: "none",
+      fontWeight: "bold",
+      transition: "background 0.3s"
+    },
+    onMouseEnter: function onMouseEnter(e) {
+      return e.currentTarget.style.background = "#f57c00";
+    },
+    onMouseLeave: function onMouseLeave(e) {
+      return e.currentTarget.style.background = "#ff9800";
     }
-  }, "Start Free Trial")));
+  }, "Start Free Trial"))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);
+
+/***/ }),
+
+/***/ "./jsx/components/Section3.jsx":
+/*!*************************************!*\
+  !*** ./jsx/components/Section3.jsx ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Section3: () => (/* binding */ Section3)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Tile_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Tile.jsx */ "./jsx/components/Tile.jsx");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.mjs");
+/* harmony import */ var _public_css_section3_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../public/css/section3.css */ "./public/css/section3.css");
+// Created by: Surya Prakash N - 8924019
+
+
+
+
+
+var Section3 = function Section3() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: {
+      backgroundColor: '#f4f7fc',
+      // Light gray background for the section
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexDirection: 'column',
+      padding: '20px',
+      width: '100%',
+      boxSizing: 'border-box',
+      marginBottom: '40px' // Added margin at the bottom for space between sections
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: {
+      textAlign: 'center',
+      marginBottom: '20px'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    style: {
+      fontSize: '32px',
+      fontWeight: 'bold',
+      color: '#333'
+    }
+  }, "Integrations that make your life easier"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    style: {
+      fontSize: '16px',
+      color: '#555'
+    }
+  }, "HoneyBook works with the tools you already use, so you can work more efficiently than ever.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "section3Class",
+    style: {
+      width: '100%',
+      marginTop: '30px',
+      display: 'flex',
+      justifyContent: 'center',
+      position: 'relative',
+      flexWrap: 'wrap',
+      // Wrap tiles on smaller screens
+      gap: '20px'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Tile_jsx__WEBPACK_IMPORTED_MODULE_1__.Tile, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faCalendarAlt,
+    title: "G - Contacts",
+    description: "Client management",
+    color: "google",
+    style: {
+      transform: 'translateY(-30px)',
+      width: '25%',
+      minWidth: '200px'
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Tile_jsx__WEBPACK_IMPORTED_MODULE_1__.Tile, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faEnvelope,
+    title: "Meta leads",
+    description: "Calendar",
+    color: "meta",
+    style: {
+      width: '18%',
+      minWidth: '200px'
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Tile_jsx__WEBPACK_IMPORTED_MODULE_1__.Tile, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faFileInvoice,
+    title: "Quickbooks",
+    description: "Reports",
+    color: "quickbooks",
+    style: {
+      transform: 'translateY(30px)',
+      width: '25%',
+      minWidth: '200px'
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Tile_jsx__WEBPACK_IMPORTED_MODULE_1__.Tile, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faMailBulk,
+    title: "Gmail",
+    description: "Email communication",
+    color: "gmail",
+    style: {
+      width: '18%',
+      minWidth: '200px'
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Tile_jsx__WEBPACK_IMPORTED_MODULE_1__.Tile, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faZap,
+    title: "Zapier",
+    description: "Automation",
+    color: "zapier",
+    style: {
+      width: '25%',
+      minWidth: '200px'
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Tile_jsx__WEBPACK_IMPORTED_MODULE_1__.Tile, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faCloud,
+    title: "iCloud",
+    description: "Email",
+    color: "icloud",
+    style: {
+      transform: 'translateY(-20px)',
+      width: '20%',
+      minWidth: '200px'
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Tile_jsx__WEBPACK_IMPORTED_MODULE_1__.Tile, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faCalendarAlt,
+    title: "Outlook",
+    description: "Email & calendar",
+    color: "outlook",
+    style: {
+      width: '18%',
+      minWidth: '200px'
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Tile_jsx__WEBPACK_IMPORTED_MODULE_1__.Tile, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faAddressBook,
+    title: "Phonebook",
+    description: "Contact management",
+    color: "phonebook",
+    style: {
+      transform: 'translateY(20px)',
+      width: '22%',
+      minWidth: '200px'
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Tile_jsx__WEBPACK_IMPORTED_MODULE_1__.Tile, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faUsers,
+    title: "Teams",
+    description: "Collaboration",
+    color: "teams",
+    style: {
+      transform: 'translateY(10px)',
+      width: '20%',
+      minWidth: '200px'
+    }
+  }))));
+};
+
+/***/ }),
+
+/***/ "./jsx/components/Tile.jsx":
+/*!*********************************!*\
+  !*** ./jsx/components/Tile.jsx ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Tile: () => (/* binding */ Tile)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+// Created by: Surya Prakash N - 8924019
+
+
+
+var Tile = function Tile(_ref) {
+  var icon = _ref.icon,
+    title = _ref.title,
+    description = _ref.description;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "tile",
+    style: {
+      margin: '0 20px',
+      padding: '20px',
+      border: '1px solid #ddd',
+      borderRadius: '8px',
+      textAlign: 'center',
+      transition: 'transform 0.3s',
+      minWidth: '200px'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: icon,
+    size: "3x",
+    style: {
+      marginBottom: '10px'
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, description));
+};
 
 /***/ }),
 
@@ -640,7 +1116,7 @@ var Features = function Features() {
     });
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "".concat(_public_style__WEBPACK_IMPORTED_MODULE_1__["default"].boxWidth)
+    className: "{`${styles.boxWidth}`} paddingTop5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "bg-gray-50 py-8 px-4 "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
@@ -783,8 +1259,8 @@ var ArticleSection = function ArticleSection(_ref) {
 };
 var Help = function Help() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "help"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("style", null, "\n          .help {\n            font-family: Arial, sans-serif;\n            margin: 0;\n            padding: 0;\n            background-color: #f4f4f4;\n          }\n\n          .help-header {\n            background: linear-gradient(90deg, #0b0b0b, #00b4d8);\n            color: white;\n            padding: 20px;\n            text-align: center;\n          }\n\n          .search-container {\n            margin-top: 10px;\n            display: flex;\n            justify-content: center;\n          }\n\n          .search-bar {\n            padding: 10px;\n            width: 300px;\n            border: 1px solid #ccc;\n            border-radius: 5px;\n          }\n\n          .search-icon {\n            font-size: 18px;\n            color: #00b4d8;\n            margin-left: -35px;\n            margin-top: 5px;\n          }\n\n          .main-content {\n            padding: 20px;\n          }\n\n          .payment-questions h2 {\n            color: #333;\n          }\n\n          .payment-questions ul {\n            list-style-type: none;\n            padding: 0;\n          }\n\n          .payment-questions ul li {\n            margin-bottom: 10px;\n          }\n\n          .article-grid {\n            display: grid;\n            grid-template-columns: repeat(3, 1fr);\n            gap: 20px;\n            margin-top: 20px;\n          }\n\n          .article-section {\n            background-color: white;\n            border: 1px solid #ddd;\n            padding: 15px;\n            border-radius: 5px;\n            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);\n          }\n\n          .article-section h3 {\n            font-size: 18px;\n            color: #333;\n          }\n\n          .article-section p {\n            font-size: 14px;\n            color: #666;\n          }\n\n          .article-section span {\n            font-size: 12px;\n            color: #00b4d8;\n          }\n\n          .help-footer {\n            background: linear-gradient(90deg, #0b0b0b, #00b4d8);\n            color: white;\n            text-align: center;\n            padding: 20px;\n          }\n\n          .help-footer nav a {\n            color: white;\n            margin: 0 10px;\n            text-decoration: none;\n          }\n\n          .help-footer nav a:hover {\n            text-decoration: underline;\n          }\n        "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
+    className: "help paddingTop5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("style", null, "\n          .help {\n            font-family: Arial, sans-serif;\n            margin: 0;\n            padding: 0;\n            background-color: #f4f4f4;\n          }\n\n          .help-header {\n            background: linear-gradient(90deg, #0b0b0b, #00b4d8);\n            color: white;\n            padding: 20px;\n            text-align: center;\n          }\n\n          .search-container {\n            margin-top: 10px;\n            display: flex;\n            justify-content: center;\n          }\n\n          .search-bar {\n            padding: 10px;\n            width: 300px;\n            font-size: 16px;\n            border: 1px solid #ccc;\n            border-radius: 5px;\n          }\n\n          .search-icon {\n            font-size: 18px;\n            color: #00b4d8;\n            margin-left: -35px;\n            margin-top: 5px;\n          }\n\n          .main-content {\n            padding: 20px;\n          }\n\n          .payment-questions h2 {\n            font-size: 24px;\n            color: #333;\n          }\n\n          .payment-questions ul {\n            list-style-type: none;\n            padding: 0;\n          }\n\n          .payment-questions ul li {\n            font-size: 16px;\n            line-height: 1.5;\n            margin-bottom: 10px;\n            color: #444;\n          }\n\n          .article-grid {\n            display: grid;\n            grid-template-columns: repeat(3, 1fr);\n            gap: 20px;\n            margin-top: 20px;\n          }\n\n          .article-section {\n            background-color: white;\n            border: 1px solid #ddd;\n            padding: 15px;\n            border-radius: 5px;\n            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);\n          }\n\n          .article-section h3 {\n            font-size: 20px; /* Slightly larger for better emphasis */\n            color: #333;\n          }\n\n          .article-section p {\n            font-size: 16px; /* Standard body size */\n            line-height: 1.5; /* Increased for readability */\n            color: #444;\n          }\n\n          .article-section span {\n            font-size: 14px; /* Improved metadata size */\n            color: #00b4d8;\n          }\n\n          .help-footer {\n            background: linear-gradient(90deg, #0b0b0b, #00b4d8);\n            color: white;\n            text-align: center;\n            padding: 20px;\n          }\n\n          .help-footer nav a {\n            color: white;\n            margin: 0 10px;\n            text-decoration: none;\n          }\n\n          .help-footer nav a:hover {\n            text-decoration: underline;\n          }\n        "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
     className: "help-header"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Find advice and answers to help you get the most out of HoneyBook."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "search-container"
@@ -875,7 +1351,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
-/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.mjs");
+/* harmony import */ var _components_Section3_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Section3.jsx */ "./jsx/components/Section3.jsx");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.mjs");
 function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
@@ -886,44 +1363,47 @@ function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) 
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+// Created by: Surya Prakash N - 8924019
+
+
 
 
 
 var tiles = [{
   title: "Send invoices",
-  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faFileInvoice,
+  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faFileInvoice,
   color: '#F9A825'
 }, {
   title: "Send contracts",
-  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faFileSignature,
+  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faFileSignature,
   color: '#0288D1'
 }, {
   title: "Book & schedule",
-  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faCalendarAlt,
+  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faCalendarAlt,
   color: '#7B1FA2'
 }, {
   title: "Automate workflows",
-  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faCogs,
+  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faCogs,
   color: '#388E3C'
 }, {
   title: "Track inquiries",
-  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faQuestionCircle,
+  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faQuestionCircle,
   color: '#F44336'
 }, {
   title: "Manage projects",
-  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faProjectDiagram,
+  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faProjectDiagram,
   color: '#FF9800'
 }, {
   title: "Send forms",
-  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faFileAlt,
+  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faFileAlt,
   color: '#9C27B0'
 }, {
   title: "Online payments",
-  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faCreditCard,
+  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faCreditCard,
   color: '#4CAF50'
 }, {
   title: "Not sure",
-  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faQuestionCircle,
+  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faQuestionCircle,
   color: '#607D8B'
 }];
 var testimonials = [{
@@ -947,8 +1427,7 @@ var HomePage = function HomePage() {
   var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
     _useState4 = _slicedToArray(_useState3, 2),
     hoveredTile = _useState4[0],
-    setHoveredTile = _useState4[1]; // Track hovered tile for border highlight
-
+    setHoveredTile = _useState4[1];
   var handleCheckboxChange = function handleCheckboxChange(title) {
     setSelectedTiles(function (prevSelectedTiles) {
       return prevSelectedTiles.includes(title) ? prevSelectedTiles.filter(function (tile) {
@@ -956,10 +1435,11 @@ var HomePage = function HomePage() {
       }) : [].concat(_toConsumableArray(prevSelectedTiles), [title]);
     });
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    class: "paddingTop5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     style: {
       backgroundColor: '#ffffff',
-      height: '600px',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
@@ -971,13 +1451,11 @@ var HomePage = function HomePage() {
     style: {
       display: 'flex',
       flexWrap: 'nowrap',
-      // Ensure the tiles do not wrap to the next line
       overflowX: 'auto',
-      // Allow horizontal scrolling if tiles overflow
       padding: '20px 0',
       marginTop: '40px',
-      width: '100%',
-      gap: '20px' // Add some space between the tiles
+      gap: '20px',
+      width: '100%'
     }
   }, tiles.map(function (tile, index) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -994,23 +1472,17 @@ var HomePage = function HomePage() {
         cursor: 'pointer',
         boxSizing: 'border-box',
         minWidth: '150px',
-        // Ensure each tile has a minimum width
         flexShrink: 0,
-        // Prevent shrinking of the tiles
         transition: 'border 0.3s ease',
         boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-        // Add a subtle shadow for better effect
-        border: selectedTiles.includes(tile.title) ? '2px solid black' // Black border if checkbox is checked
-        : hoveredTile === tile.title ? '2px solid white' // White border on hover
-        : 'none' // No border when unchecked and not hovered
+        border: selectedTiles.includes(tile.title) ? '2px solid black' : hoveredTile === tile.title ? '2px solid white' : 'none'
       },
       onMouseEnter: function onMouseEnter() {
         return setHoveredTile(tile.title);
-      } // Set hovered tile
-      ,
+      },
       onMouseLeave: function onMouseLeave() {
         return setHoveredTile(null);
-      } // Remove border when mouse leaves
+      }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
       icon: tile.icon,
       style: {
@@ -1022,7 +1494,7 @@ var HomePage = function HomePage() {
         marginTop: '10px',
         fontSize: '14px',
         fontWeight: 'bold',
-        color: '#fff' // Text color inside the tile
+        color: '#fff'
       }
     }, tile.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
       type: "checkbox",
@@ -1034,8 +1506,7 @@ var HomePage = function HomePage() {
         marginTop: '10px',
         cursor: 'pointer',
         accentColor: selectedTiles.includes(tile.title) ? tile.color : '#fff',
-        // Change the color when selected
-        transform: 'scale(1.8)' // Make the checkbox bigger
+        transform: 'scale(1.8)'
       }
     }));
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
@@ -1046,7 +1517,14 @@ var HomePage = function HomePage() {
       borderRadius: '5px',
       padding: '10px 15px',
       cursor: 'pointer',
-      marginTop: '30px' // Add space below the tiles section
+      marginTop: '30px',
+      transition: 'background 0.3s ease'
+    },
+    onMouseEnter: function onMouseEnter(e) {
+      return e.target.style.background = '#4b27c0';
+    },
+    onMouseLeave: function onMouseLeave(e) {
+      return e.target.style.background = '#5f30e3';
     }
   }, "Start Free Trial"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "pt-2"
@@ -1056,7 +1534,8 @@ var HomePage = function HomePage() {
       justifyContent: 'space-between',
       marginTop: '40px',
       width: '100%',
-      padding: '0 10%'
+      padding: '0 10%',
+      gap: '20px'
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     style: {
@@ -1074,9 +1553,9 @@ var HomePage = function HomePage() {
       flex: 1
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "95% of members"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "feel more organized with HoneyBook")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "section2Class",
     style: {
       backgroundColor: '#121417',
-      height: '500px',
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
@@ -1095,7 +1574,14 @@ var HomePage = function HomePage() {
       border: 'none',
       borderRadius: '5px',
       padding: '10px 15px',
-      cursor: 'pointer'
+      cursor: 'pointer',
+      transition: 'background 0.3s ease'
+    },
+    onMouseEnter: function onMouseEnter(e) {
+      return e.target.style.background = '#ffdf5c';
+    },
+    onMouseLeave: function onMouseLeave(e) {
+      return e.target.style.background = '#ffd853';
     }
   }, "Start Free Trial"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "pt-2"
@@ -1109,15 +1595,27 @@ var HomePage = function HomePage() {
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     style: {
-      backgroundColor: '#f9f9f9',
+      backgroundColor: '#ffffff',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      textAlign: 'center',
+      padding: '20px'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Section3_jsx__WEBPACK_IMPORTED_MODULE_2__.Section3, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: {
+      background: 'linear-gradient(to right, #121417, #2e2e2e)',
+      // Dark gradient background for depth
       padding: '60px 20px',
-      textAlign: 'center'
+      textAlign: 'center',
+      color: 'white' // White text for readability
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     style: {
       fontSize: '36px',
       fontWeight: 'bold',
-      color: '#333'
+      color: '#F9A825'
     }
   }, "What our users say"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     style: {
@@ -1127,18 +1625,18 @@ var HomePage = function HomePage() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     style: {
       fontSize: '18px',
-      color: '#555',
+      color: '#ddd',
       marginBottom: '10px'
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     style: {
-      color: '#5f30e3',
+      color: '#FF9800',
       fontWeight: 'bold'
     }
   }, "Trusted by over 100,000 independent businesses.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     style: {
       fontSize: '18px',
-      color: '#333',
+      color: '#bbb',
       marginTop: '0px',
       fontWeight: '600'
     }
@@ -1159,12 +1657,25 @@ var HomePage = function HomePage() {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       key: index,
       style: {
-        backgroundColor: '#ffffff',
-        borderRadius: '8px',
-        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+        backgroundColor: '#1e1e1e',
+        // Darker background for testimonial cards
+        borderRadius: '10px',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.4)',
+        // Darker shadow for depth
         padding: '20px',
         textAlign: 'center',
-        maxWidth: '300px'
+        maxWidth: '300px',
+        transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+        // Smooth transition for hover effect
+        border: '2px solid #FF9800' // Golden border for a striking look
+      },
+      onMouseEnter: function onMouseEnter(e) {
+        e.target.style.transform = 'scale(1.05)';
+        e.target.style.boxShadow = '0 6px 18px rgba(0, 0, 0, 0.6)';
+      },
+      onMouseLeave: function onMouseLeave(e) {
+        e.target.style.transform = 'scale(1)';
+        e.target.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.4)';
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
       src: testimonial.photo,
@@ -1174,23 +1685,105 @@ var HomePage = function HomePage() {
         height: '80px',
         borderRadius: '50%',
         objectFit: 'cover',
-        marginBottom: '10px'
+        marginBottom: '10px',
+        border: '3px solid #F9A825' // Golden border around the image for better visibility
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
       style: {
         fontStyle: 'italic',
-        color: '#555'
+        color: '#ccc'
       }
     }, "\"", testimonial.quote, "\""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
       style: {
         fontWeight: 'bold',
         marginTop: '10px',
-        color: '#333'
+        color: '#FFF'
       }
     }, "- ", testimonial.name));
   }))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HomePage);
+
+/***/ }),
+
+/***/ "./jsx/pages/Pricing.jsx":
+/*!*******************************!*\
+  !*** ./jsx/pages/Pricing.jsx ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _public_css_pricing_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../public/css/pricing.css */ "./public/css/pricing.css");
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+// Created by: Surya Prakash N - 8924019
+
+
+
+var PricingPage = function PricingPage() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("yearly"),
+    _useState2 = _slicedToArray(_useState, 2),
+    billingCycle = _useState2[0],
+    setBillingCycle = _useState2[1];
+  var toggleBilling = function toggleBilling(cycle) {
+    setBillingCycle(cycle);
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    class: "paddingTop5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "header"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Plans that grow with your business"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "All plans start with a 7-day free trial and are a tax-deductible business write-off."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "btn btn-purple",
+    "aria-label": "Start free trial"
+  }, "Start free trial"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "btn btn-white",
+    "aria-label": "Buy now"
+  }, "Buy now")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "toggle"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: billingCycle === "monthly" ? "active" : "",
+    onClick: function onClick() {
+      return toggleBilling("monthly");
+    },
+    "aria-label": "Switch to monthly billing"
+  }, "Monthly"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: billingCycle === "yearly" ? "active" : "",
+    onClick: function onClick() {
+      return toggleBilling("yearly");
+    },
+    "aria-label": "Switch to yearly billing"
+  }, "Yearly (2 months free)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "pricing-section"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "card"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Starter"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "price"
+  }, "$", billingCycle === "yearly" ? "16" : "20", "/month"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Start with everything you need to create"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Unlimited clients and projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Basic features")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    "aria-label": "Choose Starter Plan"
+  }, "Choose Starter")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "card"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Essentials"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "price"
+  }, "$", billingCycle === "yearly" ? "32" : "38", "/month"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Grow with added productivity and automation tools."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Scheduler"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Automation")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    "aria-label": "Choose Essentials Plan"
+  }, "Choose Essentials")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "card"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Premium"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "price"
+  }, "$", billingCycle === "yearly" ? "66" : "75", "/month"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Scale up with priority support for the whole team."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Unlimited team members"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Priority support")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    "aria-label": "Choose Premium Plan"
+  }, "Choose Premium"))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PricingPage);
 
 /***/ }),
 
@@ -1350,7 +1943,7 @@ var Templates = function Templates() {
     setOpenFAQIndex(openFAQIndex === index ? null : index);
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "templates-page"
+    className: "templates-page paddingTop5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
     className: "hero"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Browse templates built to impress your clients"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Discover professionally designed templates to streamline your projects and deliver exceptional client experiences."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
@@ -1483,8 +2076,46 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* General mobile styles for the Navbar */
+___CSS_LOADER_EXPORT___.push([module.id, `/* Created by: Surya Prakash N - 8924019 */
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.paddingTop5 {
+    padding-top: 3em !important;
+}
+
+/* General mobile styles for the Navbar */
 @media screen and (max-width: 768px) {
+
+    .paddingTop5 {
+        padding-top: 5em !important;
+    }
+
+    .footerContent {
+        flex-direction: column !important;
+    }
+
+    .ulClass {
+        gap: 17px !important;
+    }
+
+    .section3Class {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .section2Class {
+        padding: 0 0 0 3% !important;
+    }
+
+    .pricing-section {
+        flex-direction: column;
+        align-items: center;
+    }
 
     .article-grid {
         grid-template-columns: repeat(2, 1fr) !important;
@@ -1508,13 +2139,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* General mobile styles for the Navba
     }
 
     .dropitem {
-        transform: translateX(-25%) !important;
+        transform: translateX(-15%) !important;
         grid-template-columns: 1fr 1fr 1fr !important;
         width: 510px !important;
     }
 
     .dropitemResources {
-        transform: translateX(-45%) !important;
+        transform: translateX(-38%) !important;
         width: 510px !important;
     }
 
@@ -1613,7 +2244,270 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* General mobile styles for the Navba
       padding: 10px 20px;
     }
   }
-  `, "",{"version":3,"sources":["webpack://./public/css/navbar.css"],"names":[],"mappings":"AAAA,yCAAyC;AACzC;;IAEI;QACI,gDAAgD;IACpD;;IAEA;QACI,sBAAsB;QACtB,mBAAmB;IACvB;;IAEA;QACI,aAAa;QACb,8BAA8B;QAC9B,gBAAgB;QAChB,qBAAqB;QACrB,gBAAgB;IACpB;;IAEA;QACI,WAAW;IACf;;IAEA;QACI,sCAAsC;QACtC,6CAA6C;QAC7C,uBAAuB;IAC3B;;IAEA;QACI,sCAAsC;QACtC,uBAAuB;IAC3B;;IAEA;QACI,iBAAiB;IACrB;;IAEA;QACI,iBAAiB;IACrB;;IAEA;QACI,aAAa;QACb,8BAA8B;QAC9B,oBAAoB;IACxB;;IAEA;QACI,aAAa;IACjB;;IAEA;QACI,eAAe;IACnB;;IAEA;MACE,sBAAsB;MACtB,uBAAuB;MACvB,aAAa;IACf;;IAEA,uBAAuB;IACvB;MACE,eAAe;MACf,mBAAmB;IACrB;;IAEA,oCAAoC;IACpC;MACE,aAAa;MACb,sBAAsB;MACtB,WAAW;MACX,gBAAgB;IAClB;;IAEA,oCAAoC;IACpC;MACE,aAAa;MACb,sBAAsB;MACtB,WAAW;MACX,SAAS;MACT,SAAS;MACT,UAAU;IACZ;;IAEA,yBAAyB;IACzB;MACE,WAAW;MACX,gBAAgB;MAChB,iBAAiB;IACnB;;IAEA,oEAAoE;IACpE;MACE,aAAa;MACb,8BAA8B;MAC9B,mBAAmB;MACnB,YAAY;MACZ,qBAAqB;MACrB,eAAe;MACf,WAAW;IACb;;IAEA;MACE,iBAAiB;IACnB;;IAEA,8CAA8C;IAC9C;MACE,aAAa;IACf;;IAEA,+CAA+C;IAC/C;MACE,mBAAmB;MACnB,YAAY;MACZ,YAAY;MACZ,kBAAkB;MAClB,kBAAkB;MAClB,gBAAgB;MAChB,WAAW;IACb;;IAEA,kDAAkD;IAClD;MACE,kBAAkB;IACpB;EACF","sourcesContent":["/* General mobile styles for the Navbar */\n@media screen and (max-width: 768px) {\n\n    .article-grid {\n        grid-template-columns: repeat(2, 1fr) !important;\n    }\n\n    .footer-content {\n        flex-direction: column;\n        align-items: center;\n    }\n\n    .footer-column-right {\n        display: grid;\n        grid-template-columns: 1fr 1fr;\n        text-align: left;\n        justify-items: center;\n        padding-top: 1em;\n    }\n\n    .footer-column {\n        width: 100%;\n    }\n\n    .dropitem {\n        transform: translateX(-25%) !important;\n        grid-template-columns: 1fr 1fr 1fr !important;\n        width: 510px !important;\n    }\n\n    .dropitemResources {\n        transform: translateX(-45%) !important;\n        width: 510px !important;\n    }\n\n    h1{\n        font-size: 1.5rem;\n    }\n\n    h2 {\n        font-size: 1.5rem;\n    }\n\n    .homeAndTrial {\n        display: flex;\n        justify-content: space-between;\n        padding-bottom: 15px;\n    }\n\n    #trialButtonDesktop {\n        display: none;\n    }\n\n    #trialButtonMobile {\n        display: inline;\n    }\n\n    nav {\n      flex-direction: column;\n      align-items: flex-start;\n      padding: 10px;\n    }\n  \n    /* Left section: Logo */\n    .navbar-logo {\n      font-size: 18px;\n      margin-bottom: 10px;\n    }\n  \n    /* Right section: Links and Button */\n    .navbar-links {\n      display: flex;\n      flex-direction: column;\n      width: 100%;\n      margin-top: 10px;\n    }\n  \n    /* Make the links stack vertically */\n    .navbar-links ul {\n      display: flex;\n      flex-direction: column;\n      width: 100%;\n      gap: 10px;\n      margin: 0;\n      padding: 0;\n    }\n  \n    /* Navbar links styling */\n    .navbar-links li {\n      width: 100%;\n      text-align: left;\n      padding: 5px 15px;\n    }\n  \n    /* Remove dropdown display styles and make them a button on mobile */\n    .navbar-links li > a {\n      display: flex;\n      justify-content: space-between;\n      align-items: center;\n      color: white;\n      text-decoration: none;\n      padding: 10px 0;\n      width: 100%;\n    }\n  \n    .navbar-links li > a i {\n      margin-left: 10px;\n    }\n  \n    /* Dropdown menus should be hidden on mobile */\n    .dropdown-menu {\n      display: none;\n    }\n  \n    /* Mobile button styling for Start Free Trial */\n    .navbar-button {\n      background: #ff9800;\n      color: white;\n      border: none;\n      border-radius: 5px;\n      padding: 10px 15px;\n      margin-top: 10px;\n      width: 100%;\n    }\n  \n    /* Add some padding to mobile navbar for spacing */\n    .navbar-container {\n      padding: 10px 20px;\n    }\n  }\n  "],"sourceRoot":""}]);
+  `, "",{"version":3,"sources":["webpack://./public/css/navbar.css"],"names":[],"mappings":"AAAA,0CAA0C;;AAE1C;IACI,eAAe;IACf,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,2BAA2B;AAC/B;;AAEA,yCAAyC;AACzC;;IAEI;QACI,2BAA2B;IAC/B;;IAEA;QACI,iCAAiC;IACrC;;IAEA;QACI,oBAAoB;IACxB;;IAEA;QACI,wBAAwB;QACxB,yCAAyC;IAC7C;;IAEA;QACI,4BAA4B;IAChC;;IAEA;QACI,sBAAsB;QACtB,mBAAmB;IACvB;;IAEA;QACI,gDAAgD;IACpD;;IAEA;QACI,sBAAsB;QACtB,mBAAmB;IACvB;;IAEA;QACI,aAAa;QACb,8BAA8B;QAC9B,gBAAgB;QAChB,qBAAqB;QACrB,gBAAgB;IACpB;;IAEA;QACI,WAAW;IACf;;IAEA;QACI,sCAAsC;QACtC,6CAA6C;QAC7C,uBAAuB;IAC3B;;IAEA;QACI,sCAAsC;QACtC,uBAAuB;IAC3B;;IAEA;QACI,iBAAiB;IACrB;;IAEA;QACI,iBAAiB;IACrB;;IAEA;QACI,aAAa;QACb,8BAA8B;QAC9B,oBAAoB;IACxB;;IAEA;QACI,aAAa;IACjB;;IAEA;QACI,eAAe;IACnB;;IAEA;MACE,sBAAsB;MACtB,uBAAuB;MACvB,aAAa;IACf;;IAEA,uBAAuB;IACvB;MACE,eAAe;MACf,mBAAmB;IACrB;;IAEA,oCAAoC;IACpC;MACE,aAAa;MACb,sBAAsB;MACtB,WAAW;MACX,gBAAgB;IAClB;;IAEA,oCAAoC;IACpC;MACE,aAAa;MACb,sBAAsB;MACtB,WAAW;MACX,SAAS;MACT,SAAS;MACT,UAAU;IACZ;;IAEA,yBAAyB;IACzB;MACE,WAAW;MACX,gBAAgB;MAChB,iBAAiB;IACnB;;IAEA,oEAAoE;IACpE;MACE,aAAa;MACb,8BAA8B;MAC9B,mBAAmB;MACnB,YAAY;MACZ,qBAAqB;MACrB,eAAe;MACf,WAAW;IACb;;IAEA;MACE,iBAAiB;IACnB;;IAEA,8CAA8C;IAC9C;MACE,aAAa;IACf;;IAEA,+CAA+C;IAC/C;MACE,mBAAmB;MACnB,YAAY;MACZ,YAAY;MACZ,kBAAkB;MAClB,kBAAkB;MAClB,gBAAgB;MAChB,WAAW;IACb;;IAEA,kDAAkD;IAClD;MACE,kBAAkB;IACpB;EACF","sourcesContent":["/* Created by: Surya Prakash N - 8924019 */\n\nnav {\n    position: fixed;\n    z-index: 999;\n    width: 100%;\n}\n\n.paddingTop5 {\n    padding-top: 3em !important;\n}\n\n/* General mobile styles for the Navbar */\n@media screen and (max-width: 768px) {\n\n    .paddingTop5 {\n        padding-top: 5em !important;\n    }\n\n    .footerContent {\n        flex-direction: column !important;\n    }\n\n    .ulClass {\n        gap: 17px !important;\n    }\n\n    .section3Class {\n        display: grid !important;\n        grid-template-columns: 1fr 1fr !important;\n    }\n\n    .section2Class {\n        padding: 0 0 0 3% !important;\n    }\n\n    .pricing-section {\n        flex-direction: column;\n        align-items: center;\n    }\n\n    .article-grid {\n        grid-template-columns: repeat(2, 1fr) !important;\n    }\n\n    .footer-content {\n        flex-direction: column;\n        align-items: center;\n    }\n\n    .footer-column-right {\n        display: grid;\n        grid-template-columns: 1fr 1fr;\n        text-align: left;\n        justify-items: center;\n        padding-top: 1em;\n    }\n\n    .footer-column {\n        width: 100%;\n    }\n\n    .dropitem {\n        transform: translateX(-15%) !important;\n        grid-template-columns: 1fr 1fr 1fr !important;\n        width: 510px !important;\n    }\n\n    .dropitemResources {\n        transform: translateX(-38%) !important;\n        width: 510px !important;\n    }\n\n    h1{\n        font-size: 1.5rem;\n    }\n\n    h2 {\n        font-size: 1.5rem;\n    }\n\n    .homeAndTrial {\n        display: flex;\n        justify-content: space-between;\n        padding-bottom: 15px;\n    }\n\n    #trialButtonDesktop {\n        display: none;\n    }\n\n    #trialButtonMobile {\n        display: inline;\n    }\n\n    nav {\n      flex-direction: column;\n      align-items: flex-start;\n      padding: 10px;\n    }\n  \n    /* Left section: Logo */\n    .navbar-logo {\n      font-size: 18px;\n      margin-bottom: 10px;\n    }\n  \n    /* Right section: Links and Button */\n    .navbar-links {\n      display: flex;\n      flex-direction: column;\n      width: 100%;\n      margin-top: 10px;\n    }\n  \n    /* Make the links stack vertically */\n    .navbar-links ul {\n      display: flex;\n      flex-direction: column;\n      width: 100%;\n      gap: 10px;\n      margin: 0;\n      padding: 0;\n    }\n  \n    /* Navbar links styling */\n    .navbar-links li {\n      width: 100%;\n      text-align: left;\n      padding: 5px 15px;\n    }\n  \n    /* Remove dropdown display styles and make them a button on mobile */\n    .navbar-links li > a {\n      display: flex;\n      justify-content: space-between;\n      align-items: center;\n      color: white;\n      text-decoration: none;\n      padding: 10px 0;\n      width: 100%;\n    }\n  \n    .navbar-links li > a i {\n      margin-left: 10px;\n    }\n  \n    /* Dropdown menus should be hidden on mobile */\n    .dropdown-menu {\n      display: none;\n    }\n  \n    /* Mobile button styling for Start Free Trial */\n    .navbar-button {\n      background: #ff9800;\n      color: white;\n      border: none;\n      border-radius: 5px;\n      padding: 10px 15px;\n      margin-top: 10px;\n      width: 100%;\n    }\n  \n    /* Add some padding to mobile navbar for spacing */\n    .navbar-container {\n      padding: 10px 20px;\n    }\n  }\n  "],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./public/css/pricing.css":
+/*!************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./public/css/pricing.css ***!
+  \************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `/* Created by: Surya Prakash N - 8924019 */
+
+/* Global styling for buttons */
+.btn {
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+/* Button for teal color */
+.btn-teal {
+  background-color: #008080; /* Teal color */
+  color: white;
+  border: none;
+}
+
+.btn-white {
+  background-color: white;
+  color: #008080; /* Matching teal color */
+  border: 2px solid #008080;
+}
+
+/* Hover effects for buttons */
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Header styling */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Centered toggle button styling */
+.toggle {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 20px; /* Add spacing between the buttons */
+  margin-bottom: 30px;
+}
+
+.toggle button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.toggle button.active {
+  background-color: #008080; /* Active teal button */
+  color: white;
+}
+
+.toggle button:hover {
+  opacity: 0.8;
+}
+
+/* Pricing section layout */
+.pricing-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 0 20px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.card h2 {
+  color: #333;
+}
+
+.card .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.card ul li {
+  margin: 5px 0;
+}
+
+.card button {
+  background-color: #008080; /* Matching teal color */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Button hover effect */
+.card button:hover {
+  background-color: #006666; /* Darker teal shade */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .pricing-section {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+`, "",{"version":3,"sources":["webpack://./public/css/pricing.css"],"names":[],"mappings":"AAAA,0CAA0C;;AAE1C,+BAA+B;AAC/B;EACE,kBAAkB;EAClB,YAAY;EACZ,kBAAkB;EAClB,eAAe;EACf,iBAAiB;EACjB,gCAAgC;AAClC;;AAEA,0BAA0B;AAC1B;EACE,yBAAyB,EAAE,eAAe;EAC1C,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,uBAAuB;EACvB,cAAc,EAAE,wBAAwB;EACxC,yBAAyB;AAC3B;;AAEA,8BAA8B;AAC9B;EACE,YAAY;AACd;;AAEA,mBAAmB;AACnB;EACE,kBAAkB;EAClB,mBAAmB;AACrB;;AAEA;EACE,iBAAiB;EACjB,WAAW;AACb;;AAEA;EACE,WAAW;EACX,eAAe;AACjB;;AAEA,mCAAmC;AACnC;EACE,aAAa;EACb,uBAAuB,EAAE,oCAAoC;EAC7D,SAAS,EAAE,oCAAoC;EAC/C,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,kBAAkB;EAClB,eAAe;EACf,iBAAiB;AACnB;;AAEA;EACE,yBAAyB,EAAE,uBAAuB;EAClD,YAAY;AACd;;AAEA;EACE,YAAY;AACd;;AAEA,2BAA2B;AAC3B;EACE,aAAa;EACb,qCAAqC;EACrC,SAAS;EACT,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,kBAAkB;EAClB,yBAAyB;AAC3B;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,qBAAqB;EACrB,UAAU;EACV,mBAAmB;AACrB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,yBAAyB,EAAE,wBAAwB;EACnD,YAAY;EACZ,kBAAkB;EAClB,YAAY;EACZ,kBAAkB;EAClB,iBAAiB;EACjB,eAAe;EACf,gCAAgC;AAClC;;AAEA,wBAAwB;AACxB;EACE,yBAAyB,EAAE,sBAAsB;AACnD;;AAEA,sBAAsB;AACtB;EACE;IACE,0BAA0B;EAC5B;;EAEA;IACE,WAAW;IACX,cAAc;EAChB;AACF","sourcesContent":["/* Created by: Surya Prakash N - 8924019 */\n\n/* Global styling for buttons */\n.btn {\n  padding: 12px 20px;\n  margin: 10px;\n  border-radius: 5px;\n  cursor: pointer;\n  font-weight: bold;\n  transition: background 0.3s ease;\n}\n\n/* Button for teal color */\n.btn-teal {\n  background-color: #008080; /* Teal color */\n  color: white;\n  border: none;\n}\n\n.btn-white {\n  background-color: white;\n  color: #008080; /* Matching teal color */\n  border: 2px solid #008080;\n}\n\n/* Hover effects for buttons */\n.btn:hover {\n  opacity: 0.8;\n}\n\n/* Header styling */\n.header {\n  text-align: center;\n  margin-bottom: 40px;\n}\n\n.header h1 {\n  font-size: 2.5rem;\n  color: #333;\n}\n\n.header p {\n  color: #666;\n  font-size: 1rem;\n}\n\n/* Centered toggle button styling */\n.toggle {\n  display: flex;\n  justify-content: center; /* Center the buttons horizontally */\n  gap: 20px; /* Add spacing between the buttons */\n  margin-bottom: 30px;\n}\n\n.toggle button {\n  padding: 10px 20px;\n  border-radius: 5px;\n  cursor: pointer;\n  font-weight: bold;\n}\n\n.toggle button.active {\n  background-color: #008080; /* Active teal button */\n  color: white;\n}\n\n.toggle button:hover {\n  opacity: 0.8;\n}\n\n/* Pricing section layout */\n.pricing-section {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 20px;\n  margin: 0 20px;\n}\n\n.card {\n  padding: 20px;\n  border: 1px solid #ddd;\n  border-radius: 10px;\n  text-align: center;\n  background-color: #f9f9f9;\n}\n\n.card h2 {\n  color: #333;\n}\n\n.card .price {\n  font-size: 1.5rem;\n  font-weight: bold;\n  margin: 10px 0;\n}\n\n.card ul {\n  list-style-type: none;\n  padding: 0;\n  margin-bottom: 20px;\n}\n\n.card ul li {\n  margin: 5px 0;\n}\n\n.card button {\n  background-color: #008080; /* Matching teal color */\n  color: white;\n  padding: 10px 15px;\n  border: none;\n  border-radius: 5px;\n  font-weight: bold;\n  cursor: pointer;\n  transition: background 0.3s ease;\n}\n\n/* Button hover effect */\n.card button:hover {\n  background-color: #006666; /* Darker teal shade */\n}\n\n/* Responsive design */\n@media (max-width: 768px) {\n  .pricing-section {\n    grid-template-columns: 1fr;\n  }\n\n  .btn {\n    width: 100%;\n    margin: 10px 0;\n  }\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./public/css/section3.css":
+/*!*************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./public/css/section3.css ***!
+  \*************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `/* Created by: Surya Prakash N - 8924019 */
+
+/* Common Tile styles */
+.tile {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  flex-shrink: 0;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tile hover effect */
+.tile:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tile .fa {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* Background color classes */
+.tile.google { background-color: #A5D6A7; }
+.tile.meta { background-color: #FFEB3B; }
+.tile.quickbooks { background-color: #64B5F6; }
+.tile.gmail { background-color: #F8BBD0; }
+.tile.zapier { background-color: #E1BEE7; }
+.tile.icloud { background-color: #B2EBF2; }
+.tile.outlook { background-color: #FFCCBC; }
+.tile.phonebook { background-color: #C5CAE9; }
+.tile.teams { background-color: #C8E6C9; }
+
+.tile .tile-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.tile .tile-description {
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .tile {
+      width: 45% !important;
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tile {
+      width: 48% !important;
+      margin-bottom: 20px;
+      transform: translateY(0px);
+  }
+
+  .tile + .tile {
+      margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tile {
+      font-size: 14px;
+  }
+}
+`, "",{"version":3,"sources":["webpack://./public/css/section3.css"],"names":[],"mappings":"AAAA,0CAA0C;;AAE1C,uBAAuB;AACvB;EACE,sBAAsB;EACtB,mBAAmB;EACnB,aAAa;EACb,cAAc;EACd,2CAA2C;EAC3C,yBAAyB;EACzB,kBAAkB;EAClB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;AACzB;;AAEA,sBAAsB;AACtB;EACE,sBAAsB;EACtB,eAAe;EACf,4CAA4C;AAC9C;;AAEA;EACE,eAAe;EACf,YAAY;EACZ,mBAAmB;AACrB;;AAEA,6BAA6B;AAC7B,eAAe,yBAAyB,EAAE;AAC1C,aAAa,yBAAyB,EAAE;AACxC,mBAAmB,yBAAyB,EAAE;AAC9C,cAAc,yBAAyB,EAAE;AACzC,eAAe,yBAAyB,EAAE;AAC1C,eAAe,yBAAyB,EAAE;AAC1C,gBAAgB,yBAAyB,EAAE;AAC3C,kBAAkB,yBAAyB,EAAE;AAC7C,cAAc,yBAAyB,EAAE;;AAEzC;EACE,eAAe;EACf,iBAAiB;EACjB,WAAW;EACX,mBAAmB;AACrB;;AAEA;EACE,eAAe;EACf,WAAW;AACb;;AAEA,qCAAqC;AACrC;EACE;MACI,qBAAqB;MACrB,mBAAmB;EACvB;AACF;;AAEA;EACE;MACI,qBAAqB;MACrB,mBAAmB;MAInB,0BAA0B;EAH9B;;EAMA;MACI,gBAAgB;EACpB;AACF;;AAEA;EACE;MACI,eAAe;EACnB;AACF","sourcesContent":["/* Created by: Surya Prakash N - 8924019 */\n\n/* Common Tile styles */\n.tile {\n  background-color: #fff;\n  border-radius: 10px;\n  padding: 20px;\n  flex-shrink: 0;\n  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);\n  transition: all 0.3s ease;\n  text-align: center;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n\n/* Tile hover effect */\n.tile:hover {\n  transform: scale(1.05);\n  cursor: pointer;\n  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);\n}\n\n.tile .fa {\n  font-size: 50px;\n  color: white;\n  margin-bottom: 15px;\n}\n\n/* Background color classes */\n.tile.google { background-color: #A5D6A7; }\n.tile.meta { background-color: #FFEB3B; }\n.tile.quickbooks { background-color: #64B5F6; }\n.tile.gmail { background-color: #F8BBD0; }\n.tile.zapier { background-color: #E1BEE7; }\n.tile.icloud { background-color: #B2EBF2; }\n.tile.outlook { background-color: #FFCCBC; }\n.tile.phonebook { background-color: #C5CAE9; }\n.tile.teams { background-color: #C8E6C9; }\n\n.tile .tile-title {\n  font-size: 18px;\n  font-weight: bold;\n  color: #fff;\n  margin-bottom: 10px;\n}\n\n.tile .tile-description {\n  font-size: 14px;\n  color: #fff;\n}\n\n/* Media Queries for Responsiveness */\n@media (max-width: 1024px) {\n  .tile {\n      width: 45% !important;\n      margin-bottom: 20px;\n  }\n}\n\n@media (max-width: 768px) {\n  .tile {\n      width: 48% !important;\n      margin-bottom: 20px;\n  }\n\n  .tile {\n      transform: translateY(0px);\n  }\n\n  .tile + .tile {\n      margin-top: 20px;\n  }\n}\n\n@media (max-width: 480px) {\n  .tile {\n      font-size: 14px;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1668,6 +2562,110 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_navbar_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_navbar_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_navbar_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./public/css/pricing.css":
+/*!********************************!*\
+  !*** ./public/css/pricing.css ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_pricing_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./pricing.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./public/css/pricing.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_pricing_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_pricing_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_pricing_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_pricing_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./public/css/section3.css":
+/*!*********************************!*\
+  !*** ./public/css/section3.css ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_section3_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./section3.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./public/css/section3.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_section3_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_section3_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_section3_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_section3_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ })

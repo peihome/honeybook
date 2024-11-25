@@ -1,7 +1,9 @@
+// Created by: Surya Prakash N - 8924019
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import '../../public/css/navbar.css';
+import "../../public/css/navbar.css";
 import {
   faClipboardCheck,
   faFileInvoice,
@@ -112,7 +114,7 @@ const Navbar = () => {
   return (
     <nav
       style={{
-        background: "#333",
+        background: "#2c3e50", // Matching footer color
         padding: "10px 20px",
         color: "white",
         display: "flex",
@@ -121,15 +123,22 @@ const Navbar = () => {
       }}
     >
       {/* Left: Logo */}
-      <div class="homeAndTrial" style={{ fontWeight: "bold", fontSize: "20px" }}>
+      <div className="homeAndTrial" style={{ fontWeight: "bold", fontSize: "20px" }}>
         <Link to="/" style={{ color: "white", textDecoration: "none" }}>
+          <img src="/favicon.png" class="pr-2"></img>
           HONEYBOOK
         </Link>
       </div>
 
       {/* Right: Links and Button */}
-      <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
-        <ul
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "20px",
+        }}
+      >
+        <ul class="ulClass"
           style={{
             listStyle: "none",
             display: "flex",
@@ -147,19 +156,29 @@ const Navbar = () => {
           >
             <Link
               to="/features"
-              style={{ color: "white", textDecoration: "none" }}
+              style={{
+                color: "white",
+                textDecoration: "none",
+                position: "relative",
+                fontWeight: "bold",
+              }}
             >
               Features
-              <i class="pl-2 fa fa-caret-down" aria-hidden="true"></i>
+              <i
+                className="pl-2 fa fa-caret-down"
+                aria-hidden="true"
+                style={{ marginLeft: "5px" }}
+              ></i>
             </Link>
             {featuresDropdown && (
-              <div class="dropitem"
+              <div
+                className="dropitem"
                 style={{
                   position: "absolute",
                   top: "100%",
                   left: "50%",
                   transform: "translateX(-50%)",
-                  background: "#444",
+                  background: "#34495e", // Slightly lighter than the navbar background
                   padding: "20px",
                   borderRadius: "5px",
                   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
@@ -186,7 +205,7 @@ const Navbar = () => {
                       cursor: "pointer",
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.background = "#555";
+                      e.currentTarget.style.background = "#2c3e50"; // Darker on hover
                       e.currentTarget.style.transform = "scale(1.05)";
                     }}
                     onMouseLeave={(e) => {
@@ -217,21 +236,29 @@ const Navbar = () => {
             onMouseEnter={() => setResourcesDropdown(true)}
             onMouseLeave={() => setResourcesDropdown(false)}
           >
-            <Link
-              to="/resources"
-              style={{ color: "white", textDecoration: "none" }}
+            <div
+              style={{
+                color: "white",
+                textDecoration: "none",
+                fontWeight: "bold",
+              }}
             >
               Resources
-              <i class="pl-2 fa fa-caret-down" aria-hidden="true"></i>
-            </Link>
+              <i
+                className="pl-2 fa fa-caret-down"
+                aria-hidden="true"
+                style={{ marginLeft: "5px" }}
+              ></i>
+            </div>
             {resourcesDropdown && (
-              <div class="dropitemResources"
+              <div
+                className="dropitemResources"
                 style={{
                   position: "absolute",
                   top: "100%",
                   left: "50%",
                   transform: "translateX(-50%)",
-                  background: "#444",
+                  background: "#34495e", // Slightly lighter than the navbar background
                   padding: "20px",
                   borderRadius: "5px",
                   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
@@ -257,7 +284,7 @@ const Navbar = () => {
                       cursor: "pointer",
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.background = "#555";
+                      e.currentTarget.style.background = "#2c3e50"; // Darker on hover
                       e.currentTarget.style.transform = "scale(1.05)";
                     }}
                     onMouseLeave={(e) => {
@@ -286,34 +313,48 @@ const Navbar = () => {
           <li>
             <Link
               to="/templates"
-              style={{ color: "white", textDecoration: "none" }}
+              style={{ color: "white", textDecoration: "none", fontWeight: "bold" }}
             >
               Templates
             </Link>
           </li>
           <li>
             <Link
+              to="/pricing"
+              style={{ color: "white", textDecoration: "none", fontWeight: "bold" }}
+            >
+              Pricing
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/help"
-              style={{ color: "white", textDecoration: "none" }}
+              style={{ color: "white", textDecoration: "none", fontWeight: "bold" }}
             >
               Help
             </Link>
           </li>
         </ul>
 
-        {/* Start Free Trial Button */}
-        <button id="trialButtonDesktop"
-          style={{
-            background: "#ff9800",
-            color: "white",
-            border: "none",
-            borderRadius: "5px",
-            padding: "10px 15px",
-            cursor: "pointer",
-          }}
-        >
-          Start Free Trial
-        </button>
+        {/* Call-to-action Button */}
+        <div>
+          <Link id="trialButtonDesktop"
+            to="/signup"
+            style={{
+              backgroundColor: "#ff9800",
+              color: "white",
+              padding: "10px 20px",
+              borderRadius: "5px",
+              textDecoration: "none",
+              fontWeight: "bold",
+              transition: "background 0.3s",
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.background = "#f57c00")}
+            onMouseLeave={(e) => (e.currentTarget.style.background = "#ff9800")}
+          >
+            Start Free Trial
+          </Link>
+        </div>
       </div>
     </nav>
   );

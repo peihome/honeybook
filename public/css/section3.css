@@ -1,0 +1,81 @@
+/* Created by: Surya Prakash N - 8924019 */
+
+/* Common Tile styles */
+.tile {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  flex-shrink: 0;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tile hover effect */
+.tile:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tile .fa {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* Background color classes */
+.tile.google { background-color: #A5D6A7; }
+.tile.meta { background-color: #FFEB3B; }
+.tile.quickbooks { background-color: #64B5F6; }
+.tile.gmail { background-color: #F8BBD0; }
+.tile.zapier { background-color: #E1BEE7; }
+.tile.icloud { background-color: #B2EBF2; }
+.tile.outlook { background-color: #FFCCBC; }
+.tile.phonebook { background-color: #C5CAE9; }
+.tile.teams { background-color: #C8E6C9; }
+
+.tile .tile-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.tile .tile-description {
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .tile {
+      width: 45% !important;
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tile {
+      width: 48% !important;
+      margin-bottom: 20px;
+  }
+
+  .tile {
+      transform: translateY(0px);
+  }
+
+  .tile + .tile {
+      margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tile {
+      font-size: 14px;
+  }
+}

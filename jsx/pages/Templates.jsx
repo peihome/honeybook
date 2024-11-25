@@ -184,7 +184,7 @@ const Templates = () => {
   };
 
   return (
-    <div className="templates-page">
+    <div className="templates-page paddingTop5">
       {/* Hero Section */}
       <header className="hero">
         <h1>Browse templates built to impress your clients</h1>

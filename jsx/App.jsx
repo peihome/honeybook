@@ -1,3 +1,5 @@
+// Created by: Surya Prakash N - 8924019
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -7,6 +9,7 @@ import HomePage from "./pages/HomePage.jsx";
 import Help from "./pages/Help.jsx";
 import Features from "./pages/Features.jsx";
 import Templates from "./pages/Templates.jsx";
+import Pricing from "./pages/Pricing.jsx";
 
 const App = () => {
   return (
@@ -25,6 +28,7 @@ const App = () => {
             <Route path="/features" element={<Features />} />
             <Route path="/help" element={<Help />} />
             <Route path="/templates" element={<Templates />} />
+            <Route path="/pricing" element={<Pricing />} />
           </Routes>
         </div>
 

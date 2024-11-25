@@ -10,7 +10,7 @@ const ArticleSection = ({ title, description, articles }) => (
 
 const Help = () => {
   return (
-    <div className="help">
+    <div className="help paddingTop5">
       {/* Inline styles */}
       <style>
         {`
@@ -37,6 +37,7 @@ const Help = () => {
           .search-bar {
             padding: 10px;
             width: 300px;
+            font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 5px;
           }
@@ -53,6 +54,7 @@ const Help = () => {
           }
 
           .payment-questions h2 {
+            font-size: 24px;
             color: #333;
           }
 
@@ -62,7 +64,10 @@ const Help = () => {
           }
 
           .payment-questions ul li {
+            font-size: 16px;
+            line-height: 1.5;
             margin-bottom: 10px;
+            color: #444;
           }
 
           .article-grid {
@@ -81,17 +86,18 @@ const Help = () => {
           }
 
           .article-section h3 {
-            font-size: 18px;
+            font-size: 20px; /* Slightly larger for better emphasis */
             color: #333;
           }
 
           .article-section p {
-            font-size: 14px;
-            color: #666;
+            font-size: 16px; /* Standard body size */
+            line-height: 1.5; /* Increased for readability */
+            color: #444;
           }
 
           .article-section span {
-            font-size: 12px;
+            font-size: 14px; /* Improved metadata size */
             color: #00b4d8;
           }
 

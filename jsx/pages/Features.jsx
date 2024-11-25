@@ -243,7 +243,7 @@ const Features = () => {
 
   return (
     <>
-      <div className={`${styles.boxWidth}`}>
+      <div className="{`${styles.boxWidth}`} paddingTop5">
         <div className="bg-gray-50 py-8 px-4 ">
           <h1 className="text-2xl font-bold text-center mb-6">
             Powerful features built for small businesses
