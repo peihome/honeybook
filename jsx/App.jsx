@@ -7,6 +7,7 @@ import Footer from "./components/Footer.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import Help from "./pages/Help.jsx";
 import Features from "./pages/Feature.jsx";
+import Templates from "./pages/Templates.jsx";
 
 const App = () => {
   return (
@@ -24,6 +25,8 @@ const App = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="/features" element={<Features />} />
             <Route path="/help" element={<Help />} /> {/* Add route for Help */}
+            <Route path="/templates" element={<Templates />} />
+
           </Routes>
         </div>
 

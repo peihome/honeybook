@@ -15,14 +15,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../index.css */ "./index.css");
 /* harmony import */ var _components_Navbar_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Navbar.jsx */ "./jsx/components/Navbar.jsx");
 /* harmony import */ var _components_Footer_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Footer.jsx */ "./jsx/components/Footer.jsx");
 /* harmony import */ var _pages_HomePage_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/HomePage.jsx */ "./jsx/pages/HomePage.jsx");
 /* harmony import */ var _pages_Help_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/Help.jsx */ "./jsx/pages/Help.jsx");
 /* harmony import */ var _pages_Feature_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/Feature.jsx */ "./jsx/pages/Feature.jsx");
+/* harmony import */ var _pages_Templates_jsx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/Templates.jsx */ "./jsx/pages/Templates.jsx");
+
 
 
 
@@ -33,7 +35,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var App = function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     style: {
       display: "flex",
       flexDirection: "column",
@@ -44,16 +46,19 @@ var App = function App() {
       flex: 1,
       padding: "20px"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
     path: "/",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_HomePage_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
     path: "/features",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Feature_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
     path: "/help",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Help_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], null)
-  }), " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null))));
+  }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
+    path: "/templates",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Templates_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], null)
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
 react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.getElementById("contents")).render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(App, null));
@@ -589,6 +594,8 @@ function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) 
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+// Created by: Varshil Patel - 8938884
+
 
 
 function Feature() {
@@ -1193,6 +1200,242 @@ var HomePage = function HomePage() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Section3_jsx__WEBPACK_IMPORTED_MODULE_2__.Section3, null)));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HomePage);
+
+/***/ }),
+
+/***/ "./jsx/pages/Templates.jsx":
+/*!*********************************!*\
+  !*** ./jsx/pages/Templates.jsx ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+// src/pages/Templates.jsx
+
+var Templates = function Templates() {
+  var featuredTemplates = [{
+    id: 1,
+    name: "Project Creation Template",
+    description: "Kickstart your projects effortlessly with this creation template.",
+    image: "/img/create.png",
+    isFree: true
+  }, {
+    id: 2,
+    name: "Workflow Enhancement Template",
+    description: "Optimize your processes with our workflow enhancement template.",
+    image: "/img/honey.png",
+    isFree: true
+  }, {
+    id: 3,
+    name: "Comprehensive Kickstart Guide",
+    description: "Begin your projects right with our comprehensive kickstart guide.",
+    image: "/img/kick.png",
+    isFree: true
+  }];
+  var featuredTemplates2 = [{
+    id: 4,
+    name: "Marketing Proposal Template",
+    description: "Craft compelling marketing proposals with ease.",
+    image: "/img/marketer.png",
+    isFree: true
+  }, {
+    id: 5,
+    name: "Simplified Planning Template",
+    description: "Streamline your planning with this easy-to-use template.",
+    image: "/img/simple.png",
+    isFree: true
+  }, {
+    id: 6,
+    name: "Client Onboarding Template",
+    description: "Enhance client onboarding with our detailed template.",
+    image: "/img/onboarding.png",
+    isFree: true
+  }];
+  var featuredTemplates3 = [{
+    id: 7,
+    name: "Graphic Design Portfolio",
+    description: "Showcase your creative work with a professional portfolio.",
+    image: "/img/graphicdesign.png",
+    isFree: true
+  }, {
+    id: 8,
+    name: "Designer Profile Template",
+    description: "Present your skills effectively with our profile template.",
+    image: "/img/graphicdesigner.png",
+    isFree: true
+  }, {
+    id: 9,
+    name: "Project Kickoff Template",
+    description: "Ensure smooth project starts with our kickoff template.",
+    image: "/img/kick.png",
+    isFree: true
+  }];
+  var featuredTemplates4 = [{
+    id: 10,
+    name: "Creative Brief Template",
+    description: "Communicate project visions with our creative brief template.",
+    image: "/img/graphicdesign.png",
+    isFree: true
+  }, {
+    id: 11,
+    name: "Portfolio Presentation Template",
+    description: "Display your work beautifully with this presentation template.",
+    image: "/img/graphicdesigner.png",
+    isFree: true
+  }, {
+    id: 12,
+    name: "Startup Kickstart Guide",
+    description: "Launch your startup successfully with our kickstart guide.",
+    image: "/img/kick.png",
+    isFree: true
+  }];
+  var additionalSections = [{
+    title: "Contracts",
+    templates: featuredTemplates2
+  }, {
+    title: "Invoices",
+    templates: featuredTemplates3
+  }, {
+    title: "Showit",
+    templates: featuredTemplates4
+  }];
+  var features = [{
+    icon: "https://cdn.prod.website-files.com/66446d581b0f310645a31c0a/66bcbbf36acaa43f4eae893f_Subtract.avif",
+    title: "Business management",
+    description: "Manage projects, clients, and team in one place."
+  }, {
+    icon: "https://cdn.prod.website-files.com/66446d581b0f310645a31c0a/66bcbbf5de2cc53ba03b8ef0_Group%201000002851.avif",
+    title: "Scheduling",
+    description: "Automate scheduling and free up more time."
+  }, {
+    icon: "https://cdn.prod.website-files.com/66446d581b0f310645a31c0a/66bcbbf3cabfe6d1b596d64a_Group%201000002254.avif",
+    title: "Finances",
+    description: "Track income and expenses seamlessly."
+  }, {
+    icon: "https://cdn.prod.website-files.com/66446d581b0f310645a31c0a/66bcbbf3bd8003eda5f0c954_Frame%201073713849.avif",
+    title: "Collaboration",
+    description: "Collaborate with your team or clients with ease."
+  }, {
+    icon: "https://cdn.prod.website-files.com/66446d581b0f310645a31c0a/66d85b0317069b7fe1d6ad2b_Group%2048096068.avif",
+    title: "Online payments",
+    description: "Get paid faster with online invoicing and payments."
+  }, {
+    icon: "https://cdn.prod.website-files.com/66446d581b0f310645a31c0a/66d85b03491db8b19f49776e_Group%2048096347.avif",
+    title: "Custom branding",
+    description: "Create branded templates to showcase your business."
+  }];
+  var faqs = [{
+    question: "What are HoneyBook templates?",
+    answer: "HoneyBook templates are pre-designed tools to streamline your projects."
+  }, {
+    question: "How can I use templates in HoneyBook?",
+    answer: "Simply browse, select, and customize a template to suit your needs."
+  }, {
+    question: "What if I don’t have a HoneyBook account?",
+    answer: "You can sign up for a free trial to start using templates."
+  }, {
+    question: "What do I need to get started?",
+    answer: "All you need is a HoneyBook account to start using our templates."
+  }, {
+    question: "I'm not a designer—can I really do this?",
+    answer: "Yes! Our templates are designed to be simple and customizable for everyone."
+  }];
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    _useState2 = _slicedToArray(_useState, 2),
+    openFAQIndex = _useState2[0],
+    setOpenFAQIndex = _useState2[1];
+  var toggleFAQ = function toggleFAQ(index) {
+    setOpenFAQIndex(openFAQIndex === index ? null : index);
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "templates-page"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
+    className: "hero"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Browse templates built to impress your clients"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Discover professionally designed templates to streamline your projects and deliver exceptional client experiences."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "text",
+    placeholder: "Search templates...",
+    className: "search-bar"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "filters"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", null, "Featured"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", null, "Contracts"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", null, "Invoices"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", null, "Showit"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    className: "featured-section"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Featured templates"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Discover the latest templates that help you kick-start your projects and attract clients."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "template-grid"
+  }, featuredTemplates.map(function (template) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "template-card",
+      key: template.id
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      src: template.image,
+      alt: template.name
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, template.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, template.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "actions"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+      className: "view-button"
+    }, "View Template"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+      className: "get-button"
+    }, "Get Template")));
+  }))), additionalSections.map(function (section, index) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+      className: "template-section",
+      key: index
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "section-header"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, section.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+      className: "view-all-button"
+    }, "Browse All >")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "template-grid"
+    }, section.templates.map(function (template) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+        className: "template-card",
+        key: template.id
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+        src: template.image,
+        alt: template.name
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, template.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, template.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+        className: "actions"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+        className: "view-button"
+      }, "View Template"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+        className: "get-button"
+      }, "Get Template")));
+    })));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    className: "features-section"
+  }, features.map(function (feature, index) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "feature",
+      key: index
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      src: feature.icon,
+      alt: feature.title
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, feature.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, feature.description));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    className: "faq-section"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Frequently Asked Questions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "faq-list"
+  }, faqs.map(function (faq, index) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "faq-item ".concat(openFAQIndex === index ? "open" : ""),
+      key: index,
+      onClick: function onClick() {
+        return toggleFAQ(index);
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, faq.question), openFAQIndex === index && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, faq.answer));
+  }))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Templates);
 
 /***/ }),
 
