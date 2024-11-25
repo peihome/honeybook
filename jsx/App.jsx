@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "../index.css";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import HomePage from "./pages/HomePage.jsx";
@@ -24,9 +23,8 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/features" element={<Features />} />
-            <Route path="/help" element={<Help />} /> {/* Add route for Help */}
+            <Route path="/help" element={<Help />} />
             <Route path="/templates" element={<Templates />} />
-
           </Routes>
         </div>
 

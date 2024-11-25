@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import '../../public/css/navbar.css';
 import {
   faClipboardCheck,
   faFileInvoice,
@@ -121,7 +121,7 @@ const Navbar = () => {
       }}
     >
       {/* Left: Logo */}
-      <div style={{ fontWeight: "bold", fontSize: "20px" }}>
+      <div class="homeAndTrial" style={{ fontWeight: "bold", fontSize: "20px" }}>
         <Link to="/" style={{ color: "white", textDecoration: "none" }}>
           HONEYBOOK
         </Link>
@@ -153,7 +153,7 @@ const Navbar = () => {
               <i class="pl-2 fa fa-caret-down" aria-hidden="true"></i>
             </Link>
             {featuresDropdown && (
-              <div
+              <div class="dropitem"
                 style={{
                   position: "absolute",
                   top: "100%",
@@ -171,7 +171,8 @@ const Navbar = () => {
                 }}
               >
                 {features.map((item, index) => (
-                  <div
+                  <Link
+                    to="/features"
                     key={index}
                     style={{
                       display: "flex",
@@ -204,7 +205,7 @@ const Navbar = () => {
                     <p style={{ fontSize: "14px", color: "#ddd" }}>
                       {item.description}
                     </p>
-                  </div>
+                  </Link>
                 ))}
               </div>
             )}
@@ -224,7 +225,7 @@ const Navbar = () => {
               <i class="pl-2 fa fa-caret-down" aria-hidden="true"></i>
             </Link>
             {resourcesDropdown && (
-              <div
+              <div class="dropitemResources"
                 style={{
                   position: "absolute",
                   top: "100%",
@@ -290,26 +291,10 @@ const Navbar = () => {
               Templates
             </Link>
           </li>
-          <li>
-            <Link
-              to="/pricing"
-              style={{ color: "white", textDecoration: "none" }}
-            >
-              Pricing
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/login"
-              style={{ color: "white", textDecoration: "none" }}
-            >
-              Log In
-            </Link>
-          </li>
         </ul>
 
         {/* Start Free Trial Button */}
-        <button
+        <button id="trialButtonDesktop"
           style={{
             background: "#ff9800",
             color: "white",

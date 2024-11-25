@@ -1,0 +1,110 @@
+/* General mobile styles for the Navbar */
+@media screen and (max-width: 768px) {
+
+    .dropitem {
+        transform: translateX(-30%) !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        width: 510px !important;
+    }
+
+    .dropitemResources {
+        transform: translateX(-50%) !important;
+        width: 510px !important;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .homeAndTrial {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 15px;
+    }
+
+    #trialButtonDesktop {
+        display: none;
+    }
+
+    #trialButtonMobile {
+        display: inline;
+    }
+
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    /* Left section: Logo */
+    .navbar-logo {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    /* Right section: Links and Button */
+    .navbar-links {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    /* Make the links stack vertically */
+    .navbar-links ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+    }
+  
+    /* Navbar links styling */
+    .navbar-links li {
+      width: 100%;
+      text-align: left;
+      padding: 5px 15px;
+    }
+  
+    /* Remove dropdown display styles and make them a button on mobile */
+    .navbar-links li > a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      text-decoration: none;
+      padding: 10px 0;
+      width: 100%;
+    }
+  
+    .navbar-links li > a i {
+      margin-left: 10px;
+    }
+  
+    /* Dropdown menus should be hidden on mobile */
+    .dropdown-menu {
+      display: none;
+    }
+  
+    /* Mobile button styling for Start Free Trial */
+    .navbar-button {
+      background: #ff9800;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      margin-top: 10px;
+      width: 100%;
+    }
+  
+    /* Add some padding to mobile navbar for spacing */
+    .navbar-container {
+      padding: 10px 20px;
+    }
+  }
+  

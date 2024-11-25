@@ -3,7 +3,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "../../public/style";
 
-export default function Feature() {
+const Features = () => {
+
+  useEffect(() => {
+    import('../../public/css/features.css');
+  }, []);
+
   const features = [
     {
       id: 1,
@@ -412,3 +417,5 @@ export default function Feature() {
     </>
   );
 }
+
+export default Features;

@@ -155,20 +155,6 @@ const Help = () => {
           <ArticleSection title="Other Articles" description="Everything else you might find helpful to reference or know" articles={11} />
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="help-footer">
-        <p>HONEYBOOK</p>
-        <nav>
-          <a href="#">Community</a>
-          <a href="#">Academy</a>
-          <a href="#">Webinars</a>
-          <a href="#">Blog</a>
-          <a href="#">Independent Business Podcast</a>
-          <a href="#">Pros Marketplace</a>
-          <a href="#">Free File Setup</a>
-        </nav>
-      </footer>
     </div>
   );
 };
